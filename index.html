@@ -1,0 +1,3770 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <title>Thanh Hoá</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://giabao123123.github.io/webcon/web%20con.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./logo thanh hoá/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style></style>
+  </head>
+  <body class="w3-light-grey" style="padding-top: 110px" id="hero">
+    <a href="#hero" class="scroll-top-button">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <aside id="backToTop">
+      <a href="#hero" aria-label="Lên đầu trang">
+        <span class="arrow arrow-1"></span>
+        <span class="arrow arrow-2"></span>
+      </a>
+    </aside>
+
+    <aside class="box w3-right neon-box2" style="margin-top: 2%">
+      <p class="text">Chào mừng đến với tỉnh Thanh Hoá!</p>
+    </aside>
+
+    <header class="w3-top">
+      <nav class="w3-bar w3-white w3-padding w3-card">
+        <a href="#home" class="w3-bar-item neon-box">Thanh Hoá</a>
+        <button class="scroll-btn left-btn w3-hide-small w3-hide-medium">
+          ❮
+        </button>
+        <button class="scroll-btn right-btn w3-hide-small w3-hide-medium">
+          ❯
+        </button>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <ul
+          style="
+            background: linear-gradient(180deg, #ff9800, #ff5722);
+            color: #fffaf0;
+          "
+          class="menu w3-right w3-button"
+          id="menu-list"
+        >
+          <li><a href="#about">LỊCH SỬ HÌNH THÀNH</a></li>
+          <li><a href="#menu">ĐỊA LÝ</a></li>
+          <li><a href="#khihau">KHÍ HẬU</a></li>
+          <li><a href="#DIEUKIENTUNHIEN">ĐIỀU KIỆN TỰ NHIÊN</a></li>
+          <li>
+            <a href="#THOITIET">DỰ BÁO THỜI TIẾT TRONG TỈNH</a>
+          </li>
+          <li><a href="#contact">DÂN CƯ</a></li>
+          <li><a href="#VANHOA">VĂN HOÁ</a></li>
+          <li><a href="#DITICH">DI TÍCH, DI SẢN VĂN HOÁ</a></li>
+          <li><a href="#GIAODUC">GIÁO DỤC</a></li>
+          <li><a href="#KINHTE">KINH TẾ</a></li>
+          <li><a href="#AMTHUC">ẨM THỰC</a></li>
+          <li><a href="#DULICH">DU LỊCH</a></li>
+          <li><a href="#tiemnang">TIỀM NĂNG PHÁT TRIÊN</a></li>
+          <li>
+            <a href="https://giabao123123.github.io/trochoithanhhoa/"
+              >TRÒ CHƠI</a
+            >
+          </li>
+        </ul>
+
+        <script>
+          const menuLinks = document.querySelectorAll("#menu-list a");
+          const menuToggle = document.getElementById("menu-toggle");
+          menuLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              if (window.innerWidth <= 768) {
+                menuToggle.checked = false;
+              }
+            });
+          });
+        </script>
+        <nav
+          style="
+            background: linear-gradient(180deg, #ff9800, #ff5722);
+            color: #fff3cd;
+          "
+          class="w3-animate-left w3-hide-small neon-box"
+        >
+          <section class="menu-scroll">
+            <a href="#about" class="w3-bar-item w3-button"
+              >LỊCH SỬ HÌNH THÀNH</a
+            >
+            <a href="#menu" class="w3-bar-item w3-button">ĐỊA LÝ</a>
+            <a href="#DIEUKIENTUNHIEN" class="w3-bar-item w3-button"
+              >ĐIỀU KIỆN TỰ NHIÊN</a
+            >
+            <a href="#khihau" class="w3-bar-item w3-button">KHÍ HẬU</a>
+            <a href="#THOITIET" class="w3-bar-item w3-button"
+              >DỰ BÁO THỜI TIẾT TRONG TỈNH</a
+            >
+            <a href="#contact" class="w3-bar-item w3-button">DÂN CƯ</a>
+            <a href="#VANHOA" class="w3-bar-item w3-button">VĂN HOÁ</a>
+            <a href="#DITICH" class="w3-bar-item w3-button"
+              >DI TÍCH, DI SẢN VĂN HOÁ</a
+            >
+            <a href="#GIAODUC" class="w3-bar-item w3-button">GIÁO DỤC</a>
+            <a href="#KINHTE" class="w3-bar-item w3-button">KINH TẾ</a>
+            <a href="#AMTHUC" class="w3-bar-item w3-button">ẨM THỰC</a>
+            <a href="#DULICH" class="w3-bar-item w3-button">DU LỊCH</a>
+            <a href="#tiemnang" class="w3-bar-item w3-button"
+              >TIỀM NĂNG PHÁT TRIÊN</a
+            >
+            <a
+              href="https://giabao123123.github.io/trochoithanhhoa/"
+              class="w3-bar-item w3-button"
+              >TRÒ CHƠI</a
+            >
+          </section>
+        </nav>
+      </nav>
+    </header>
+
+    <main class="w3-content" style="max-width: 1100px">
+      <section class="w3-row w3-padding-16 w3-animate-left" id="about">
+        <header>
+          <h1 class="w3-center" style="color: red; font-size: 35px">
+            LỊCH SỬ HÌNH THÀNH
+          </h1>
+        </header>
+        <article>
+          <p>
+            <mark><strong>1. Thời Bắc thuộc</strong></mark>
+          </p>
+          <p>
+            Thời nhà Hán, Thanh Hóa thuộc <u>quận Cửu Chân</u>. Thời Tam Quốc,
+            nhà Đông Ngô trực tiếp cai trị. Khi tách quận Cửu Chân thành
+            <u>Cửu Chân</u> và <u>Cửu Đức</u>, Thanh Hóa thuộc quận Cửu Chân
+            mới, gồm đất Thanh Hóa và một phần phía tây Ninh Bình, chia thành 7
+            huyện:
+            <u
+              >Tư Phố, Di Phong, Cư Phong, Trạn Ngô, Kiến Sơ, Phù Lạc, Thường
+              Lạc, Tùng Nguyên</u
+            >.
+          </p>
+          <p>
+            Thời nhà Lương, <u>Lương Võ Đế đổi Cửu Chân thành Ái Châu</u>. Thời
+            nhà Tùy, gọi lại là <u>Cửu Chân quận</u>.
+          </p>
+
+          <p>
+            <mark><strong>2. Thời kỳ tự chủ</strong></mark>
+          </p>
+          <p>
+            Thời nhà Đinh và Tiền Lê, Thanh Hóa gọi là <u>đạo Ái Châu</u>. Thời
+            Lý đầu gọi là <u>trại Ái Châu</u>, năm
+            <u>1029 (Lý Thái Tông, Thiên Thành 2)</u> đổi thành
+            <u>phủ Thanh Hóa</u>, bắt đầu có tên Thanh Hóa, lỵ sở đặt tại
+            <u>Duy Tinh (nay xã Hậu Lộc)</u>.
+          </p>
+          <p>
+            Năm <u>1242</u>, vua Trần Thái Tông đổi 24 lộ thành 12 lộ, có
+            <u>Thanh Hóa phủ lộ</u>. Năm <u>1397</u>, Trần Thuận Tông đổi làm
+            <u>trấn Thanh Đô</u>, gồm 7 huyện (<u
+              >Cổ Đằng, Cổ Hoằng, Đông Sơn, Cổ Lôi, Vĩnh Ninh, Yên Định, Lương
+              Giang</u
+            >) và 3 châu:
+          </p>
+          <ul>
+            <li>
+              <u>Châu Thanh Hóa</u>: Nga Lạc, Tế Giang, Yên Lạc, Lỗi Giang
+            </li>
+            <li><u>Châu Ái</u>: Hà Trung, Thống Bình, Tống Giang, Chi Nga</li>
+            <li>
+              <u>Châu Cửu Chân</u>: Cổ Chiến, Kết Thuế, Duyên Giác, Nông Cống
+            </li>
+          </ul>
+
+          <p>
+            <mark><strong>3. Thời Hồ và thời Minh</strong></mark>
+          </p>
+          <p>
+            Năm <u>1403</u>, Hồ Hán Thương đổi
+            <u>phủ Thanh Hóa thành phủ Thiên Xương</u>, gọi chung với Cửu Chân
+            và Ái Châu là <u>Tây Đô</u>.
+          </p>
+          <p>
+            Thời Minh (<u>1407</u>),
+            <u>trấn Thanh Đô đổi thành phủ Thanh Hóa</u>, lãnh 4 châu (<u
+              >Cửu Chân, Ái Châu, Thanh Hóa, Quỳ Châu</u
+            >) và 11 huyện (<u
+              >Yên Định, Nông Cống, Vĩnh Ninh, Tống Giang, Cổ Đằng, Nga Lạc,
+              Lương Giang, Lỗi Giang, Đông Sơn, Yên Lạc, Cổ Lôi</u
+            >).
+          </p>
+          <p>
+            Minh cai trị tiếp tục đặt thêm 2 huyện:
+            <u>Lôi Dương, Thụy Nguyên</u>.
+          </p>
+
+          <p>
+            <mark><strong>4. Thời Hậu Lê</strong></mark>
+          </p>
+          <p>
+            Năm <u>1428</u>, Lê Thái Tổ chia nước thành 5 đạo, Thanh Hóa thuộc
+            <u>Hải Tây đạo</u>. Năm <u>1466</u>, đổi tên là
+            <u>Thừa Tuyên Thanh Hóa</u>; năm <u>1469</u> đổi thành
+            <u>Thừa Tuyên Thanh Hoa</u>. Thanh Hoa Thừa Tuyên gồm 4 phủ, 16
+            huyện, 4 châu; trị sở tại
+            <u
+              >thành Tư Phố, làng Dương Xá (nay phường Thiệu Dương, TP Thanh
+              Hóa)</u
+            >.
+          </p>
+          <p>Thời Hậu Lê, Thanh Hóa gồm 6 phủ:</p>
+          <ul>
+            <li>
+              <u>Phủ Thiệu Thiên (Thiệu Hóa)</u>: 8 huyện (Thụy Nguyên, Vĩnh
+              Phúc, Đông Sơn, Lôi Dương, Yên Định, Cẩm Thủy, Thạch Thành, Quảng
+              Bình)
+            </li>
+            <li>
+              <u>Phủ Hà Trung</u>: 4 huyện (Hoằng Hóa, Thuần Lộc, Nga Sơn, Tống
+              Sơn)
+            </li>
+            <li>
+              <u>Phủ Tĩnh Gia</u>: 3 huyện (Nông Cống, Ngọc Sơn, Quảng Xương)
+            </li>
+            <li>
+              <u>Phủ Thanh Đô</u>: 1 huyện (Thọ Xuân) và 4 châu (Khai Na, Tàm,
+              Lương Chính, Sầm)
+            </li>
+            <li>
+              <u>Phủ Trường Yên</u>: 3 huyện (Gia Viễn, Yên Mô, Yên Khang)
+            </li>
+            <li>
+              <u>Phủ Thiên Quan (Nho Quan)</u>: 3 huyện (Phụng Hóa, Yên Hóa, Lạc
+              Thổ)
+            </li>
+          </ul>
+
+          <p>
+            <mark><strong>5. Giai đoạn Nguyễn và cắt đất cho Lào</strong></mark>
+          </p>
+          <p>
+            Năm <u>1802</u>, vua Gia Long tặng đất
+            <u>Trấn Ninh, Trấn Biên, Trấn Định, Trấn Tĩnh</u> (~50.000 km²) cho
+            Vạn Tượng để đáp lễ giúp đánh Tây Sơn. Năm <u>1828</u>, vua Minh
+            Mạng tái sáp nhập một phần vào Nghệ An và Thanh Hóa.
+          </p>
+          <p>
+            Tên gọi qua các thời kỳ: <u>1802</u>: trấn Thanh Hóa;
+            <u>1831 (Minh Mạng)</u>: tỉnh Thanh Hoa; <u>1843 (Thiệu Trị)</u>:
+            tỉnh Thanh Hóa.
+          </p>
+
+          <p>
+            <mark><strong>6. Thời hiện đại (sau 1945)</strong></mark>
+          </p>
+          <p>
+            Sau Cách mạng Tháng Tám <u>1945</u>, tỉnh Thanh Hóa gồm 21 đơn vị
+            hành chính: thị xã Thanh Hóa + 20 huyện (Bá Thước, Cẩm Thủy, Đông
+            Sơn, Hà Trung, Hậu Lộc, Hoằng Hóa, Lang Chánh, Nga Sơn, Ngọc Lặc,
+            Như Xuân, Nông Cống, Quan Hóa, Quảng Xương, Thạch Thành, Thiệu Hóa,
+            Thọ Xuân, Thường Xuân, Tĩnh Gia, Vĩnh Lộc, Yên Định).
+          </p>
+          <p>
+            Năm <u>1963</u>, thành lập thị trấn Sầm Sơn. Năm <u>1965</u>, thành
+            lập huyện Triệu Sơn. Năm <u>1977</u>, thành lập thị trấn Bỉm Sơn;
+            hợp nhất nhiều huyện (Ví dụ: Hà Trung + Nga Sơn = Trung Sơn). Năm
+            <u>1981–1982</u>, tái lập các huyện như cũ, thành lập các thị xã Bỉm
+            Sơn và Sầm Sơn.
+          </p>
+          <p>
+            Năm <u>1994</u>, thị xã Thanh Hóa lên <u>thành phố Thanh Hóa</u>.
+            Năm <u>1996</u>, chia huyện Quan Hóa, Như Xuân, hợp nhất một số xã
+            để thành lập huyện Thiệu Hóa, Yên Định. Năm <u>2017</u>, thị xã Sầm
+            Sơn lên <u>thành phố Sầm Sơn</u>. Năm <u>2020</u>, huyện Tĩnh Gia
+            lên thị xã Nghi Sơn. Năm <u>2025</u>, sáp nhập toàn bộ huyện Đông
+            Sơn vào thành phố Thanh Hóa.
+          </p>
+
+          <p style="font-size: 15px">
+            (nguồn thông tin:
+            <a
+              href="https://vi.wikipedia.org/wiki/Thanh_H%C3%B3a"
+              target="_blank"
+              >wiki Thanh Hoá</a
+            >
+            )
+          </p>
+        </article>
+        <figure class="w3-center">
+          <img
+            src="https://media.vneconomy.vn/images/upload/2022/11/25/tp-th1-16030838899061922697121-crop-16037903814461133739223.jpeg"
+            class="w3-container"
+            alt=""
+          />
+          <figcaption style="font-size: 15px">
+            (nguồn hình ảnh:
+            <a
+              href="https://xaydungso.vn/blog/tong-hop-200-anh-dep-thanh-hoa-thanh-pho-co-kinh-day-nghe-thuat-vi-cb.html"
+              target="_blank"
+              >xaydungso.vn</a
+            >
+            )
+          </figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section class="w3-row-padding w3-padding-16 w3-content" id="menu">
+        <header>
+          <h1 class="w3-padding-16" style="color: red; font-size: 50px">
+            ĐỊA LÝ
+          </h1>
+        </header>
+        <article>
+          <p>
+            Thanh Hóa nằm ở vĩ tuyến 19°18' Bắc đến 20°40' Bắc, kinh tuyến
+            104°22' Đông đến 106°05' Đông
+          </p>
+          <p>
+            Thanh Hóa là tỉnh chuyển tiếp giữa miền Bắc và miền Trung Việt Nam
+            trên những phương diện
+          </p>
+          <p>Diện tích của tỉnh khoảng 16.486,49 km².</p>
+          <p><strong>Điểm cực của tỉnh:</strong></p>
+          <ul>
+            <li>
+              Điểm cực Bắc tại: xã Trung Sơn, khoảng <u>21°10′B, 105°30′Đ</u>
+            </li>
+            <li>
+              Điểm cực Đông tại: xã Nga An, khoảng <u>20°25′B, 106°10′Đ</u>
+            </li>
+            <li>
+              Điểm cực Tây tại: xã Quang Chiểu, khoảng <u>20°55′B, 104°55′Đ</u>
+            </li>
+            <li>
+              Điểm cực Nam tại: phường Nghi Sơn, khoảng <u>19°25′B, 105°15′Đ</u>
+            </li>
+          </ul>
+          <p>
+            Lưu ý: Các điểm cực hiện chưa được công bố tọa độ chính thức; các số
+            liệu trên chỉ mang tính ước lượng, dựa trên bản đồ hành chính tỉnh
+            Lào Cai sau sáp nhập (2025) và dữ liệu bản đồ số.
+          </p>
+          <p><strong>Tiếp giáp:</strong></p>
+          <ul>
+            <li>Phía đông giáp Biển Đông với đường bờ biển dài hơn 102 km</li>
+            <li>Phía tây giáp tỉnh Hủa Phăn, Lào với đường biên giới 192 km</li>
+            <li>Phía nam giáp tỉnh Nghệ An</li>
+            <li>Phía bắc giáp tỉnh Ninh Bình, tỉnh Phú Thọ, tỉnh Sơn La.</li>
+          </ul>
+          <p style="font-size: 15px">
+            Nguồn thông tin:
+            <a href="https://vi.wikipedia.org/wiki/S%C6%A1n_La" target="_blank"
+              >Wikipedia – Thanh Hoá</a
+            >
+          </p>
+        </article>
+        <figure class="w3-center">
+          <img
+            src="https://bandovietnamtreotuong.com/wp-content/uploads/2017/12/b%E1%BA%A3n-%C4%91%E1%BB%93-h%C3%A0nh-ch%C3%ADnh-thanh-h%C3%B3a-2-e1513568608620.jpg"
+            class="w3-round w3-image w3-opacity-min w3-center"
+            alt="Bản đồ Hải Phòng"
+            style="width: 75%"
+          />
+          <span class="text-overlay"></span>
+          <figcaption style="font-size: 15px">
+            Nguồn hình ảnh:
+            <a
+              href="https://bandovietnamtreotuong.com/ban-do-hanh-chinh-thanh-hoa/"
+              target="_blank"
+              >bandovietnamtreotuong.com</a
+            >
+          </figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section
+        class="w3-row-padding w3-padding-16 w3-content"
+        id="DIEUKIENTUNHIEN"
+      >
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">ĐIỀU KIỆN TỰ NHIÊN</h1>
+        </header>
+        <article>
+          <p>
+            <mark><strong>1. Địa chất và địa hình</strong></mark>
+          </p>
+          <p>
+            Miền núi Thanh Hóa là sự nối dài của Tây Bắc Bộ, trong khi đồng bằng
+            Thanh Hóa là <u>đồng bằng lớn nhất Trung Bộ</u>. Ngoài ra, 1 phần
+            phía Bắc huyện Nga Sơn thuộc <u>đồng bằng châu thổ sông Hồng</u>.
+            Địa hình Thanh Hóa nghiêng từ Tây Bắc xuống Đông Nam. Ở phía Tây
+            Bắc, các đồi núi cao <u>1000 - 1500 m</u> thoải dần về phía Đông
+            Nam. Đồi núi chiếm <u>3/4 diện tích tỉnh</u>.
+          </p>
+
+          <p>
+            Vùng miền núi và trung du chiếm phần lớn diện tích, trong đó miền
+            trung du không được tách riêng mà coi là một phần không tách rời của
+            miền núi.
+          </p>
+
+          <p>
+            Miền đồi núi chiếm <u>2/3 diện tích Thanh Hóa</u>, gồm 11 huyện:
+            <u
+              >Như Xuân, Như Thanh, Thường Xuân, Lang Chánh, Bá Thước, Quan Hóa,
+              Quan Sơn, Mường Lát, Cẩm Thủy, Thạch Thành, Ngọc Lặc</u
+            >. Vùng đồi núi phía Tây khí hậu mát hơn, lượng mưa lớn hơn, có tiềm
+            năng lâm sản và thủy điện (sông Chu và các phụ lưu). Miền đồi núi
+            phía Nam đồi thấp hơn, đất màu mỡ thuận lợi cho cây công nghiệp, lâm
+            nghiệp, cây đặc sản, có <u>Vườn quốc gia Bến En</u> thuộc huyện Như
+            Thanh và Như Xuân.
+          </p>
+
+          <p>
+            Vùng đồng bằng Thanh Hóa là <u>đồng bằng lớn nhất miền Trung</u> và
+            <u>thứ 3 cả nước</u>, có đầy đủ tính chất của đồng bằng châu thổ do
+            phù sa từ sông Mã, sông Yên, sông Hoạt bồi đắp. Điểm đồng bằng thấp
+            nhất so với mực nước biển là <u>1 m</u>.
+          </p>
+
+          <p>
+            Vùng ven biển gồm các huyện
+            <u>Nga Sơn, Hậu Lộc, Hoằng Hóa, Sầm Sơn, Quảng Xương, Nghi Sơn</u>,
+            có sình lầy ở Nga Sơn và các cửa sông Hoạt, Mã, Yên, Lạch Bạng. Bờ
+            biển dài, bằng phẳng, có bãi tắm Sầm Sơn và các khu vực thuận lợi
+            cho lấn biển, nuôi trồng thủy sản, khu dịch vụ và công nghiệp (Nga
+            Sơn, Nam Sầm Sơn, Nghi Sơn).
+          </p>
+
+          <p>
+            <mark><strong>3. Ngôn ngữ</strong></mark>
+          </p>
+          <p>
+            Người Thanh Hóa có âm vực giống phương ngữ Bắc Bộ, nhưng khác về
+            cách phát âm từ (ví dụ: người Bắc nói "chị", người Thanh Hóa nói
+            "chậy") và sử dụng một số từ ngữ phương ngữ Nghệ - Tĩnh.
+          </p>
+
+          <p>
+            <mark><strong>4. Hành chính</strong></mark>
+          </p>
+          <p>
+            Thanh Hóa có <u>166 đơn vị hành chính cấp xã</u>, gồm
+            <u>147 xã</u> và <u>19 phường</u>.
+          </p>
+
+          <p>
+            <mark><strong>5. Tài nguyên thiên nhiên</strong></mark>
+          </p>
+          <p>
+            Thanh Hóa có <u>296 mỏ và điểm khoáng sản</u> với
+            <u>42 loại khoáng sản</u>, bao gồm: đá granite, đá marble, đá vôi
+            làm xi măng, sét làm xi măng, crôm, quặng sắt, serpentinit, đôlômit,
+            vàng sa khoáng và các loại khoáng sản khác.
+          </p>
+        </article>
+        <p style="font-size: 15px">
+          (nguồn thông tin:
+          <a href="https://vi.wikipedia.org/wiki/Thanh_H%C3%B3a"
+            >wiki Thanh Hoá</a
+          >)
+        </p>
+      </section>
+      <hr />
+
+      <section
+        class="w3-container w3-padding-16 table-responsive w3-content"
+        style="overflow-x: auto"
+        id="khihau"
+      >
+        <header>
+          <h1 style="font-size: 50px">KHÍ HẬU</h1>
+          <br />
+        </header>
+        <article>
+          <p>
+            <mark><strong>Khí hậu</strong></mark>
+          </p>
+          <p>
+            Thanh Hóa thuộc kiểu khí hậu nhiệt đới gió mùa, có
+            <u>2 mùa nóng lạnh</u>. Nhiệt độ trung bình khoảng
+            <u>23,8 - 24,5 °C</u>.
+          </p>
+        </article>
+        <table
+          style="
+            width: 100%;
+            border-color: rgb(162, 169, 177);
+            background-color: rgb(234, 236, 240);
+          "
+        >
+          <tbody>
+            <tr>
+              <th colspan="14">Dữ liệu khí hậu của Thanh Hoá</th>
+            </tr>
+            <tr>
+              <th scope="row">Tháng</th>
+              <th scope="col">1</th>
+              <th scope="col">2</th>
+              <th scope="col">3</th>
+              <th scope="col">4</th>
+              <th scope="col">5</th>
+              <th scope="col">6</th>
+              <th scope="col">7</th>
+              <th scope="col">8</th>
+              <th scope="col">9</th>
+              <th scope="col">10</th>
+              <th scope="col">11</th>
+              <th scope="col">12</th>
+              <th>Năm</th>
+            </tr>
+            <tr style="text-align: center">
+              <th>Kỷ lục cao °C (°F)</th>
+              <td style="background: #ffb3b3">30 <br />(86)</td>
+              <td style="background: #ff9999">31 <br />(88)</td>
+              <td style="background: #ff8080">32 <br />(90)</td>
+              <td style="background: #ff6666">34 <br />(93)</td>
+              <td style="background: #ff4d4d">35 <br />(95)</td>
+              <td style="background: #ff6666">33 <br />(91)</td>
+              <td style="background: #ff6666">33 <br />(91)</td>
+              <td style="background: #ff8080">32 <br />(90)</td>
+              <td style="background: #ff9999">31 <br />(88)</td>
+              <td style="background: #ffb3b3">30 <br />(86)</td>
+              <td style="background: #ffcccc">29 <br />(84)</td>
+              <td style="background: #ffd9d9">28 <br />(82)</td>
+              <td style="background: #ed0000; color: white">35 <br />(95)</td>
+            </tr>
+            <tr style="text-align: center">
+              <th>Trung bình ngày tối đa °C (°F)</th>
+              <td style="background: #ffe0b3">19.8 <br />(68)</td>
+              <td style="background: #ffe6b3">21.8 <br />(71)</td>
+              <td style="background: #ffecb3">24.5 <br />(76)</td>
+              <td style="background: #fff2b3">28.6 <br />(84)</td>
+              <td style="background: #fff7b3">31.1 <br />(88)</td>
+              <td style="background: #fffbb3">32.8 <br />(91)</td>
+              <td style="background: #fffbb3">32.3 <br />(90)</td>
+              <td style="background: #fff7b3">31.1 <br />(88)</td>
+              <td style="background: #fff2b3">29.9 <br />(85)</td>
+              <td style="background: #ffecb3">27.7 <br />(82)</td>
+              <td style="background: #ffe6b3">24.9 <br />(77)</td>
+              <td style="background: #ffe0b3">21.0 <br />(70)</td>
+              <td style="background: #ffd4a3">27.1 <br />(81)</td>
+            </tr>
+            <tr style="text-align: center">
+              <th>Trung bình ngày °C (°F)</th>
+              <td style="background: #ffe6cc">17.9 <br />(64)</td>
+              <td style="background: #ffedcc">19.4 <br />(67)</td>
+              <td style="background: #fff3cc">21.9 <br />(71)</td>
+              <td style="background: #fff9cc">25.9 <br />(78)</td>
+              <td style="background: #ffffcc">28.0 <br />(82)</td>
+              <td style="background: #ffffb3">30.0 <br />(86)</td>
+              <td style="background: #ffffb3">29.9 <br />(86)</td>
+              <td style="background: #ffffb3">28.5 <br />(83)</td>
+              <td style="background: #ffffcc">27.0 <br />(81)</td>
+              <td style="background: #fff9cc">25.0 <br />(77)</td>
+              <td style="background: #fff3cc">22.0 <br />(72)</td>
+              <td style="background: #ffeccc">18.5 <br />(65)</td>
+              <td style="background: #ffd4a3">24.2 <br />(75)</td>
+            </tr>
+            <tr style="text-align: center">
+              <th>Tối thiểu trung bình ngày °C (°F)</th>
+              <td style="background: #fff0d9">16 <br />(61)</td>
+              <td style="background: #fff3d9">17 <br />(63)</td>
+              <td style="background: #fff7d9">19 <br />(66)</td>
+              <td style="background: #fffccc">23 <br />(73)</td>
+              <td style="background: #ffffcc">25 <br />(77)</td>
+              <td style="background: #ffffcc">27 <br />(81)</td>
+              <td style="background: #ffffcc">27 <br />(81)</td>
+              <td style="background: #ffffcc">26 <br />(79)</td>
+              <td style="background: #ffffcc">24 <br />(75)</td>
+              <td style="background: #fff7cc">22 <br />(72)</td>
+              <td style="background: #fff3cc">19 <br />(66)</td>
+              <td style="background: #ffead0">15 <br />(59)</td>
+              <td style="background: #ffd4a3">22.3 <br />(72)</td>
+            </tr>
+            <tr style="text-align: center">
+              <th>Kỷ lục thấp °C (°F)</th>
+              <td style="background: #cce5ff">8 <br />(46)</td>
+              <td style="background: #cce5ff">9 <br />(48)</td>
+              <td style="background: #99ccff">12 <br />(54)</td>
+              <td style="background: #66b2ff">15 <br />(59)</td>
+              <td style="background: #3399ff; color: white">18 <br />(64)</td>
+              <td style="background: #3399ff; color: white">21 <br />(70)</td>
+              <td style="background: #3399ff; color: white">22 <br />(72)</td>
+              <td style="background: #66b2ff">22 <br />(72)</td>
+              <td style="background: #99ccff">20 <br />(68)</td>
+              <td style="background: #cce5ff">17 <br />(63)</td>
+              <td style="background: #cce5ff">12 <br />(54)</td>
+              <td style="background: #cce5ff">9 <br />(48)</td>
+              <td style="background: #3399ff">8 <br />(46)</td>
+            </tr>
+            <tr style="text-align: center">
+              <th>Lượng mưa trung bình mm (inches)</th>
+              <td style="background: #e0ffe0">29 <br />(1.1)</td>
+              <td style="background: #d4ffd4">21 <br />(0.8)</td>
+              <td style="background: #bfffbc">38 <br />(1.5)</td>
+              <td style="background: #99ff99">62 <br />(2.4)</td>
+              <td style="background: #66ff66">174 <br />(6.9)</td>
+              <td style="background: #33cc33; color: white">177 <br />(6.9)</td>
+              <td style="background: #33cc33; color: white">211 <br />(8.3)</td>
+              <td style="background: #009900; color: white">
+                314 <br />(12.4)
+              </td>
+              <td style="background: #006600; color: white">
+                298 <br />(11.7)
+              </td>
+              <td style="background: #006600; color: white">182 <br />(7.2)</td>
+              <td style="background: #339933; color: white">60 <br />(2.4)</td>
+              <td style="background: #99ff99">31 <br />(1.2)</td>
+              <td style="background: #004c00; color: white">
+                1697 <br />(66.8)
+              </td>
+            </tr>
+            <tr style="text-align: center">
+              <th>Số ngày mưa trung bình</th>
+              <td style="background: #b3b3ff">4</td>
+              <td style="background: #b3b3ff">4</td>
+              <td style="background: #9999ff">5</td>
+              <td style="background: #8080ff">6</td>
+              <td style="background: #6666ff">11</td>
+              <td style="background: #4d4dff">10</td>
+              <td style="background: #4d4dff">12</td>
+              <td style="background: #3333ff">16</td>
+              <td style="background: #3333ff">15</td>
+              <td style="background: #4d4dff">12</td>
+              <td style="background: #6666ff">7</td>
+              <td style="background: #8080ff">4</td>
+              <td style="background: #0000ff; color: white">110</td>
+            </tr>
+            <tr style="text-align: center">
+              <th>Độ ẩm trung bình (%)</th>
+              <td style="background: #99ccff">76</td>
+              <td style="background: #99ccff">80</td>
+              <td style="background: #80bfff">82</td>
+              <td style="background: #66b2ff">81</td>
+              <td style="background: #3399ff">78</td>
+              <td style="background: #007fff; color: white">75</td>
+              <td style="background: #007fff; color: white">77</td>
+              <td style="background: #3399ff">83</td>
+              <td style="background: #007fff; color: white">83</td>
+              <td style="background: #0066cc; color: white">80</td>
+              <td style="background: #3399ff">76</td>
+              <td style="background: #66b2ff">72</td>
+              <td style="background: #007fff; color: white">79</td>
+            </tr>
+            <tr style="text-align: center">
+              <th>Số giờ nắng trung bình tháng</th>
+              <td style="background: #cccccc">65</td>
+              <td style="background: #bbbbbb">66</td>
+              <td style="background: #aaaaaa">85</td>
+              <td style="background: #999900">150</td>
+              <td style="background: #dddd00">250</td>
+              <td style="background: #d6d600">315</td>
+              <td style="background: #cccc00">310</td>
+              <td style="background: #cfcf00">275</td>
+              <td style="background: #d2d200">235</td>
+              <td style="background: #cbcb00">190</td>
+              <td style="background: #c0c024">155</td>
+              <td style="background: #b8b855">110</td>
+              <td style="background: #999900">2300</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size: 15px">
+          (nguồn thông tin:
+          <a href="https://vi.wikipedia.org/wiki/Thanh_H%C3%B3a"
+            >wiki Thanh Hoá</a
+          >, Chuẩn khí hậu 30 năm (WMO Normals 1991–2020), tổng hợp từ trạm khí
+          tượng bởi NCEI (NOAA) và GHCN. Số liệu tải về/hiển thị từ ClimatView –
+          JMA. )
+        </p>
+      </section>
+      <hr />
+      <section class="w3-row-padding w3-padding-16" id="THOITIET">
+        <h1 class="w3-padding-16" style="color: red; font-size: 50px">
+          DỰ BÁO THỜI TIẾT TRONG TỈNH
+        </h1>
+        <div
+          style="
+            max-width: 760px;
+            margin: 0 auto;
+            font-family: &quot;Montserrat&quot;, Arial, sans-serif;
+          "
+        >
+          <h2
+            class="section-title"
+            style="text-align: center; color: #0a3d2e; margin-bottom: 6px"
+          >
+            🌤 Dự Báo Thời Tiết
+          </h2>
+          <p
+            style="
+              text-align: center;
+              color: #666;
+              font-size: 14px;
+              margin-bottom: 20px;
+            "
+          >
+            Gõ tên xã / phường / thị trấn để xem dự báo thời tiết
+          </p>
+
+          <div
+            style="position: relative; max-width: 440px; margin: 0 auto 22px"
+          >
+            <span
+              style="
+                position: absolute;
+                left: 14px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 17px;
+                pointer-events: none;
+              "
+              >🔍</span
+            >
+            <input
+              type="text"
+              id="tt-input"
+              placeholder="Gõ tên xã, phường, thị trấn..."
+              oninput="ttFilter()"
+              onfocus="ttShow()"
+              autocomplete="off"
+              style="
+                width: 100%;
+                padding: 13px 14px 13px 42px;
+                font-size: 15px;
+                border-radius: 10px;
+                border: 2px solid #0a3d2e;
+                color: #333;
+                background: #fff;
+                font-family: inherit;
+                outline: none;
+                box-sizing: border-box;
+              "
+            />
+            <div
+              id="tt-drop"
+              style="
+                display: none;
+                position: absolute;
+                top: calc(100% + 4px);
+                left: 0;
+                right: 0;
+                background: #fff;
+                border: 2px solid #0a3d2e;
+                border-radius: 10px;
+                max-height: 250px;
+                overflow-y: auto;
+                z-index: 9999;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+              "
+            ></div>
+          </div>
+
+          <div
+            id="tt-box"
+            style="
+              display: none;
+              border-radius: 14px;
+              overflow: hidden;
+              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+            "
+          >
+            <div
+              style="
+                background: #0a3d2e;
+                color: #fff;
+                padding: 12px 20px;
+                font-size: 15px;
+                font-weight: 600;
+              "
+            >
+              📍 Thời tiết: <span id="tt-name"></span>
+            </div>
+            <div id="tt-widget-wrap" style="background: #fff"></div>
+            <div
+              id="tt-noembed"
+              style="
+                display: none;
+                padding: 24px;
+                text-align: center;
+                background: #fff;
+              "
+            >
+              <p style="color: #888; font-size: 14px">
+                ⚙️ Khu vực này chưa có dữ liệu.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          var TT_AREAS = [
+            {
+              name: "Huyện Quảng Xương",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/quang-xuong?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Đông Sơn",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/dong-son?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Nông Cống",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/nong-cong?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Như Thanh",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/nhu-thanh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Như Xuân",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/nhu-xuan?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Nga Sơn",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/nga-son?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Hậu Lộc",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/hau-loc?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Hoằng Hóa",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/hoang-hoa?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Thiệu Hóa",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/thieu-hoa?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Triệu Sơn",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/trieu-son?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Thường Xuân",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/thuong-xuan?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Thọ Xuân",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/tho-xuan?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Yên Định",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/yen-dinh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Vĩnh Lộc",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/vinh-loc?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Hà Trung",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/ha-trung?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Thạch Thành",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/thach-thanh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Cẩm Thủy",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/cam-thuy?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Ngọc Lặc",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/ngoc-lac?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Lang Chánh",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/lang-chanh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Quan Sơn",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/son?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Bá Thước",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/ba-thuoc?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Quan Hóa",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/hoa?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Mường Lát",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/muong-lat?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "thị xã Nghi Sơn",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/nghi-son?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "thị xã Bỉm Sơn",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/bim-son?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Thành phố Sầm Sơn",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/sam-son?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Thành phố Thanh Hóa",
+              parent: "Tỉnh Thanh Hoá cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/thanh-hoa/thanh-hoa?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+          ];
+          function ttNorm(s) {
+            return s
+              .toLowerCase()
+              .normalize("NFD")
+              .replace(/[\u0300-\u036f]/g, "")
+              .replace(/đ/g, "d");
+          }
+
+          var ttFiltered = TT_AREAS.slice();
+
+          function ttFilter() {
+            var q = ttNorm(document.getElementById("tt-input").value.trim());
+            ttFiltered = q
+              ? TT_AREAS.filter(function (a) {
+                  return ttNorm(a.name).indexOf(q) !== -1;
+                })
+              : TT_AREAS.slice();
+            ttRender();
+            document.getElementById("tt-drop").style.display = "block";
+          }
+
+          function ttShow() {
+            ttFiltered = TT_AREAS.slice();
+            ttRender();
+            document.getElementById("tt-drop").style.display = "block";
+          }
+
+          function ttRender() {
+            var dd = document.getElementById("tt-drop");
+            if (!ttFiltered.length) {
+              dd.innerHTML =
+                '<div style="padding:14px 18px;color:#999;font-size:14px;">Không tìm thấy</div>';
+              return;
+            }
+            dd.innerHTML = ttFiltered
+              .map(function (a) {
+                var idx = TT_AREAS.indexOf(a);
+                var dot = a.widget.trim()
+                  ? '<span style="color:#27ae60;font-size:10px;margin-left:6px;" title="Đã có widget">●</span>'
+                  : '<span style="color:#ccc;font-size:10px;margin-left:6px;" title="Chưa có widget">●</span>';
+                return (
+                  '<div onclick="ttSelect(' +
+                  idx +
+                  ')"' +
+                  ' style="padding:11px 18px;font-size:14px;cursor:pointer;' +
+                  'border-bottom:1px solid #f5f5f5;display:flex;align-items:center;"' +
+                  " onmouseover=\"this.style.background='#f0f7f4'\"" +
+                  " onmouseout=\"this.style.background='#fff'\">" +
+                  '<span style="color:#0a3d2e;font-weight:600;">' +
+                  a.name +
+                  "</span>" +
+                  dot +
+                  "</div>"
+                );
+              })
+              .join("");
+          }
+
+          function ttSelect(idx) {
+            var a = TT_AREAS[idx];
+            document.getElementById("tt-input").value = a.name;
+            document.getElementById("tt-drop").style.display = "none";
+            var locationTitle = a.name;
+            if (a.parent) {
+              locationTitle += " (" + a.parent + ")";
+            }
+
+            document.getElementById("tt-name").textContent = locationTitle;
+            document.getElementById("tt-box").style.display = "block";
+
+            var wrap = document.getElementById("tt-widget-wrap");
+            var noEmbed = document.getElementById("tt-noembed");
+
+            if (a.widget && a.widget.trim()) {
+              wrap.innerHTML = a.widget;
+              wrap.style.display = "block";
+              noEmbed.style.display = "none";
+            } else {
+              wrap.innerHTML = "";
+              wrap.style.display = "none";
+              noEmbed.style.display = "block";
+            }
+
+            document
+              .getElementById("tt-box")
+              .scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+
+          document.addEventListener("click", function (e) {
+            var inp = document.getElementById("tt-input");
+            var drop = document.getElementById("tt-drop");
+            if (drop && e.target !== inp && !drop.contains(e.target))
+              drop.style.display = "none";
+          });
+        </script>
+      </section>
+      <hr />
+      <section class="w3-row w3-padding-16 w3-content" id="contact">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">DÂN CƯ</h1>
+        </header>
+        <article>
+          <figure style="overflow-x: auto">
+            <table
+              style="
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid #999;
+              "
+            >
+              <tr style="background: #f0f0f0">
+                <th>Năm</th>
+                <th>Dân số</th>
+                <th>±%</th>
+              </tr>
+              <tbody>
+                <tr>
+                  <td>1995</td>
+                  <td>3.290.000</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>1996</td>
+                  <td>3.320.000</td>
+                  <td>+0,91%</td>
+                </tr>
+                <tr>
+                  <td>1997</td>
+                  <td>3.350.000</td>
+                  <td>+0,90%</td>
+                </tr>
+                <tr>
+                  <td>1998</td>
+                  <td>3.400.000</td>
+                  <td>+1,49%</td>
+                </tr>
+                <tr>
+                  <td>1999</td>
+                  <td>3.467.307</td>
+                  <td>+1,99%</td>
+                </tr>
+                <tr>
+                  <td>2000</td>
+                  <td>3.550.000</td>
+                  <td>+2,40%</td>
+                </tr>
+                <tr>
+                  <td>2009</td>
+                  <td>3.400.595</td>
+                  <td>-4,23%</td>
+                </tr>
+                <tr>
+                  <td>2010</td>
+                  <td>3.450.000</td>
+                  <td>+1,46%</td>
+                </tr>
+                <tr>
+                  <td>2011</td>
+                  <td>3.437.700</td>
+                  <td>-0,35%</td>
+                </tr>
+                <tr>
+                  <td>2012</td>
+                  <td>3.457.900</td>
+                  <td>+0,59%</td>
+                </tr>
+                <tr>
+                  <td>2013</td>
+                  <td>3.477.700</td>
+                  <td>+0,58%</td>
+                </tr>
+                <tr>
+                  <td>2014</td>
+                  <td>3.496.100</td>
+                  <td>+0,53%</td>
+                </tr>
+                <tr>
+                  <td>2015</td>
+                  <td>3.514.200</td>
+                  <td>+0,52%</td>
+                </tr>
+                <tr>
+                  <td>2016</td>
+                  <td>3.528.300</td>
+                  <td>+0,40%</td>
+                </tr>
+                <tr>
+                  <td>2017</td>
+                  <td>3.544.400</td>
+                  <td>+0,46%</td>
+                </tr>
+                <tr>
+                  <td>2018</td>
+                  <td>3.558.200</td>
+                  <td>+0,39%</td>
+                </tr>
+                <tr>
+                  <td>2019</td>
+                  <td>3.645.800</td>
+                  <td>+2,44%</td>
+                </tr>
+                <tr>
+                  <td>2020</td>
+                  <td>3.664.940</td>
+                  <td>+0,53%</td>
+                </tr>
+                <tr>
+                  <td>2021</td>
+                  <td>3.716.430</td>
+                  <td>+1,43%</td>
+                </tr>
+                <tr>
+                  <td>2022</td>
+                  <td>3.722.060</td>
+                  <td>+0,15%</td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>3.739.500</td>
+                  <td>+0,46%</td>
+                </tr>
+                <tr>
+                  <td>2024</td>
+                  <td>3.760.650</td>
+                  <td>+0,57%</td>
+                </tr>
+              </tbody>
+            </table>
+          </figure>
+          <p>
+            <mark
+              ><strong>Quy mô dân số tỉnh Thanh Hóa (31/12/2022):</strong></mark
+            >
+            Tỉnh Thanh Hóa có quy mô dân số là <u>4.357.523 người</u> (bao gồm
+            dân số thường trú là <u>4.209.293 người</u>, dân số tạm trú quy đổi
+            là <u>148.230 người</u>). Tỷ lệ đô thị hóa tính theo dân số quy đổi
+            là <u>38,02%</u>.
+          </p>
+
+          <p>
+            <mark><strong>Dân số tỉnh Thanh Hóa (01/04/2019):</strong></mark>
+            Thanh Hóa có <u>3.640.128 người</u>, trong đó tỷ lệ nữ chiếm
+            <u>1.824.127 người</u> (<u>50,11%</u>). Mật độ dân số của tỉnh là
+            <u>328 người/km²</u>, tăng <u>22,6 người/km²</u> và xếp thứ
+            <u>28/63</u> tỉnh, thành trong cả nước. Tỷ số giới tính (số nam trên
+            100 nữ) tăng từ <u>95,6%</u> (năm 1999) lên <u>98,0%</u> (năm 2009),
+            tương đương với mức chung của cả nước.
+          </p>
+
+          <p>
+            <mark><strong>Tôn giáo tại Thanh Hóa (01/04/2019):</strong></mark>
+            Toàn tỉnh có <u>9 tôn giáo</u> với tổng số <u>159.466 người</u>,
+            nhiều nhất là Công giáo với <u>149.990 người</u>, tiếp theo là đạo
+            Tin Lành <u>7.890 người</u>, Phật giáo <u>1.447 người</u>. Các tôn
+            giáo khác gồm Hồi giáo <u>95 người</u>, đạo Cao Đài <u>23 người</u>,
+            Minh Sư đạo <u>14 người</u>, Phật giáo Hòa Hảo <u>4 người</u>, Tứ Ân
+            Hiếu Nghĩa <u>2 người</u> và Minh Lý đạo <u>1 người</u>.
+          </p>
+
+          <p style="font-size: 15px">
+            (Nguồn thông tin:
+            <a
+              href="https://vi.wikipedia.org/wiki/Thanh_H%C3%B3a"
+              target="_blank"
+              >Wikipedia – Thanh Hoá</a
+            >
+            <br />
+            <a
+              href="https://www.citypopulation.de/en/vietnam/prov/admin/38__thanh_h%C3%B3a/"
+              target="_blank"
+              >Điều tra dân số (Census) Việt Nam – 1999, 2009</a
+            ><br />
+            <a href="https://danso.info/dan-so-thanh-hoa/" target="_blank"
+              >Dân số trung bình hàng năm – 2011–2024</a
+            ><br />
+            <a
+              href="https://www.city-facts.com/thanh-h%C3%B3a/population"
+              target="_blank"
+              >Ước tính giai đoạn 1995–2000</a
+            >
+            )
+          </p>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="VANHOA">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">VĂN HOÁ, LỄ HỘI</h1>
+        </header>
+        <article>
+          <h2 style="font-size: 40px">
+            <strong><mark>VĂN HOÁ:</mark></strong>
+          </h2>
+          <p>
+            Văn hoá Thanh Hoá là sự kết tinh lâu đời của truyền thống lịch sử
+            hào hùng, đa dạng bản sắc dân tộc và phong phú các giá trị văn hoá
+            vật thể, phi vật thể tiêu biểu của xứ Thanh.
+          </p>
+          <h2 style="font-size: 40px">
+            <strong><mark>LỄ HỘI:</mark></strong>
+          </h2>
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              <strong>-Các lễ hội tiêu biểu của tỉnh Thanh Hoá:</strong>
+            </summary>
+            <ol type="1">
+              <li>
+                <mark><strong>Pôồn Pôông</strong></mark>
+                <p>
+                  Thời gian:
+                  <u> Các ngày rằm tháng Giêng, tháng 3 và tháng 7</u>
+                </p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >Các bản làng vùng cao thuộc huyện Ngọc Lặc, Lang Chánh, Bá
+                    Thước…</u
+                  >
+                </p>
+                <p>
+                  Ngày xưa, người Mường trong bản khi bị đau, ốm sẽ được các
+                  thầy hái thuốc giúp chữa bệnh. Để bày tỏ lòng cảm kích, họ đã
+                  tổ chức Lễ hội Pôồn Pôông hàng năm trước là để tạ ơn vua trời
+                  đã ban cho con dân khả năng lao động, sau là tôn vinh những vị
+                  lương y chữa bệnh cứu người. Trong lễ hội Thanh Hóa này, bạn
+                  sẽ có cơ hội tìm hiểu thêm về nghi thức tế thần, nhập đồng,
+                  diễn xướng… và lắng nghe âm thanh rộn rã được tạo nên bởi nhạc
+                  cụ dân tộc.
+                </p>
+                <figure>
+                  <img
+                    src="https://mia.vn/media/uploads/blog-du-lich/top-11-le-hoi-thanh-hoa-mang-dam-net-dep-van-hoa-mien-trung-01-1680955674.jpeg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://mia.vn/cam-nang-du-lich/top-11-le-hoi-thanh-hoa-mang-dam-net-dep-van-hoa-mien-trung-11850"
+                      target="_blank"
+                      >mia.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ hội Phủ Na</strong></mark>
+                <p>Thời gian: <u>Từ ngày 1 - 16/2 và 1 - 6/8 Âm lịch </u></p>
+                <p>
+                  Địa điểm: <u> Xã Xuân Du, Huyện Như Thanh, Tỉnh Thanh Hóa</u>
+                </p>
+                <p>
+                  Lễ hội Phủ Na là sự kiện để người dân bản địa và tín đồ du
+                  lịch gần xa dâng hương tưởng nhớ người có công, đồng thời cầu
+                  nguyện cho một mùa màng bội thu, gia đình khỏe mạnh… Lễ hội
+                  Thanh Hóa này được tổ chức tại huyện Như Thanh - một trong
+                  những địa phương có phong cảnh thiên nhiên tuyệt đẹp tại vùng
+                  đất cực Bắc miền Trung. Do đó, bạn có thể kết hợp tham gia
+                  trải nghiệm lễ hội và du lịch nghỉ dưỡng tại đây.
+                </p>
+                <figure>
+                  <img src="" class="w3-container" alt="" />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://mia.vn/cam-nang-du-lich/top-11-le-hoi-thanh-hoa-mang-dam-net-dep-van-hoa-mien-trung-11850"
+                      target="_blank"
+                      >mia.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ hội Đền Nưa</strong></mark>
+                <p>Thời gian: <u> Từ ngày 18 - 20/1 Âm lịch hàng năm</u></p>
+                <p>
+                  Địa điểm: <u>Xã Tân Ninh, Huyện Triệu Sơn, Tỉnh Thanh Hóa</u>
+                </p>
+                <p>
+                  Xã Tân Ninh vốn hình thành với cái tên “Kẻ Nưa” do nằm gần dãy
+                  núi Nưa có đất đai màu mỡ, cây cối tươi tốt. Không chỉ xây
+                  dựng Đền Nưa - Am Tiên ngay trong xã, người dân còn tổ chứa lễ
+                  hội để dâng mâm sơn trang tế lễ và thắp hương ghi nhớ công ơn
+                  của các vị tướng đã góp phần kiến thiết vùng đất này.
+                </p>
+                <figure>
+                  <img
+                    src="https://mia.vn/media/uploads/blog-du-lich/top-11-le-hoi-thanh-hoa-mang-dam-net-dep-van-hoa-mien-trung-03-1680955674.jpeg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://mia.vn/cam-nang-du-lich/top-11-le-hoi-thanh-hoa-mang-dam-net-dep-van-hoa-mien-trung-11850"
+                      target="_blank"
+                      >mia.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ hội Đền Sòng</strong></mark>
+                <p>Thời gian: <u> Từ ngày 10 - 26/2 Âm lịch</u></p>
+                <p>
+                  Địa điểm:
+                  <u>Phường Bắc Sơn, Thị xã Bỉm Sơn, Tỉnh Thanh Hóa</u>
+                </p>
+                <p>
+                  Lễ hội Đền Sòng là một trong những sự kiện văn hóa có quy mô
+                  lớn và hoành tráng nhất tỉnh. Có dịp tham gia lễ hội Thanh Hóa
+                  này, bạn sẽ không khỏi thích thú trước nghi thức rước Thánh
+                  Mẫu từ Đền Sòng đến Chín Giếng và dâng mâm lễ vật gồm nhiều đồ
+                  ăn thức uống như hoa quả, bánh kẹo, xôi gà… Sau nghi thức tế
+                  lễ, phần hội gồm các trò chơi mang đậm bản sắc dân tộc còn thu
+                  hút đông đảo tín đồ du lịch hơn cả.
+                </p>
+                <figure>
+                  <img
+                    src="https://mia.vn/media/uploads/blog-du-lich/top-11-le-hoi-thanh-hoa-mang-dam-net-dep-van-hoa-mien-trung-04-1680955675.jpeg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://mia.vn/cam-nang-du-lich/top-11-le-hoi-thanh-hoa-mang-dam-net-dep-van-hoa-mien-trung-11850"
+                      target="_blank"
+                      >mia.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ hội Cửa Đặt</strong></mark>
+                <p>
+                  Thời gian:
+                  <u
+                    >Vào mùa xuân, thường từ ngày 5/1 đến đầu tháng 2 Âm lịch
+                  </u>
+                </p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >Đền Cửa Đặt, Xã Vạn Xuân, Huyện Thường Xuân, Tỉnh Thanh
+                    Hóa</u
+                  >
+                </p>
+                <p>
+                  Cửa Đặt là lễ hội Thanh Hóa có nguồn gốc gắn liền với truyền
+                  thống văn hóa của bà con huyện Thường Xuân. Sự kiện được tổ
+                  chức để tưởng nhớ Cầm Bá Thước - vị anh hùng đã giương cao
+                  ngọn cờ khởi nghĩa trong phong trào Cần Vương. Đây cũng là dịp
+                  để người dân địa phương giao lưu với nhau thông qua các trò
+                  chơi dân gian như múa sạp, hát giao duyên, tung còn…
+                </p>
+                <figure>
+                  <img
+                    src="https://mia.vn/media/uploads/blog-du-lich/top-11-le-hoi-thanh-hoa-mang-dam-net-dep-van-hoa-mien-trung-05-1680955731.jpeg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://mia.vn/cam-nang-du-lich/top-11-le-hoi-thanh-hoa-mang-dam-net-dep-van-hoa-mien-trung-11850"
+                      target="_blank"
+                      >mia.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ hội Lam Kinh</strong></mark>
+                <p>
+                  Thời gian:
+                  <u> Ngày 22/8 Âm lịch hàng năm (Ngày giỗ vua Lê Thái Tổ)</u>
+                </p>
+                <p>
+                  Địa điểm:
+                  <u>Khu vực Lam Kinh, Huyện Thọ Xuân, Tỉnh Thanh Hóa</u>
+                </p>
+                <p>
+                  Sau khi vua Lê Thái Tổ qua đời và được an táng tại vùng đất
+                  này, Lễ hội Lam Kinh được người dân duy trì đều đặn mỗi năm
+                  với quy mô ngày càng hoành tráng. Tham gia Lễ hội Thanh Hóa
+                  này, bạn sẽ có cơ hội tìm hiểu về các nghi thức cổ truyền như
+                  rước kiệu, tế lễ, trống hội… Chưa dừng lại ở đó, lễ hội còn có
+                  vô số hoạt động nghệ thuật độc đáo như hội thề Lũng Nhai, giải
+                  phóng Đông Quan, phát huy hào khí Lam Sơn giúp bạn cảm nhận rõ
+                  nét ý chí của bậc ông cha thời xưa.
+                </p>
+                <figure>
+                  <img
+                    src="https://mia.vn/media/uploads/blog-du-lich/top-11-le-hoi-thanh-hoa-mang-dam-net-dep-van-hoa-mien-trung-06-1680955731.jpeg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://mia.vn/cam-nang-du-lich/top-11-le-hoi-thanh-hoa-mang-dam-net-dep-van-hoa-mien-trung-11850"
+                      target="_blank"
+                      >mia.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ hội cầu phúc Đền Độc Cước</strong></mark>
+                <p>Thời gian: <u> Ngày 16/1 Âm lịch hàng năm</u></p>
+                <p>
+                  Địa điểm:
+                  <u>Đền Độc Cước, Thành phố Sầm Sơn, Tỉnh Thanh Hóa</u>
+                </p>
+                <p>
+                  Lễ hội cầu phúc Đền Độc Cước là sự kiện văn hóa nhằm mở đầu
+                  cho chuỗi hoạt động du lịch diễn ra tại Thành phố Sầm Sơn,
+                  tỉnh Thanh Hóa. Trong lễ hội, các bậc trưởng lão sẽ tễ lễ cho
+                  Thần - Thánh - Trời để cầu quốc thái dân an, mưa thuận gió
+                  hòa. Cũng tại Lễ hội cầu phúc Đền Độc Cước, bạn sẽ có cơ hội
+                  tìm hiểu về các phong phục tập quán nổi tiếng khắp xứ này như
+                  nghi lễ rước kiệu, cầu phúc, tế tôn ti…
+                </p>
+                <figure>
+                  <img
+                    src="https://mia.vn/media/uploads/blog-du-lich/top-11-le-hoi-thanh-hoa-mang-dam-net-dep-van-hoa-mien-trung-07-1680955731.jpeg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://mia.vn/cam-nang-du-lich/top-11-le-hoi-thanh-hoa-mang-dam-net-dep-van-hoa-mien-trung-11850"
+                      target="_blank"
+                      >mia.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong> Lễ hội Đền Bà Triệu</strong></mark>
+                <p>Thời gian: <u> Ngày 20 - 23/2 Âm lịch hàng năm</u></p>
+                <p>
+                  Địa điểm: <u> Xã Triệu Lộc, Huyện Hậu Lộc, Tỉnh Thanh Hóa</u>
+                </p>
+                <p>
+                  Nhằm tưởng nhớ vị anh hùng Triệu Thị Trinh, người dân đã tổ
+                  chức lễ hội ngay tại đền thờ của Bà vào các ngày 20 - 23/2 Âm
+                  lịch hàng năm với quy mô lớn nhất tỉnh. Những nghi lễ tế Bà
+                  không chỉ tổ chức một trang trọng tại sự kiện văn hóa này mà
+                  còn diễn ra ở các đền và đình làng trong cùng một thời điểm.
+                  Để khơi dậy hào khí chống quân Ngô dưới thời Bà Triệu, phần
+                  hội không có trò chơi dân gian mà thay vào đó là hoạt động tập
+                  trận được tái diễn lại.
+                </p>
+                <figure>
+                  <img
+                    src="https://mia.vn/media/uploads/blog-du-lich/top-11-le-hoi-thanh-hoa-mang-dam-net-dep-van-hoa-mien-trung-08-1680955731.jpeg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://mia.vn/cam-nang-du-lich/top-11-le-hoi-thanh-hoa-mang-dam-net-dep-van-hoa-mien-trung-11850"
+                      target="_blank"
+                      >mia.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ hội rước Thần Cá</strong></mark>
+                <p>Thời gian: <u> Ngày 8/1 hàng năm</u></p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >Bản Lương Ngọc, Xã Cẩm Lương, Huyện Cẩm Thủy, Tỉnh Thanh
+                    Hóa</u
+                  >
+                </p>
+                <p>
+                  Lễ hội rước Thần Cá là hoạt động mang đậm nét đẹp văn hóa của
+                  người Mường tại bản Lương Ngọc - một trong những địa phương có
+                  suối cá chảy qua. Trong lễ hội Thanh Hóa này, người dân sẽ
+                  rước Thần Cá từ suối Ngọc đưa về sân vận động, sau đó thực
+                  hiện nghi lễ và cúng tế tại đền thờ. Lễ hội với đầy đủ nghi
+                  thức trang trọng là lời nguyện cầu thành tâm của người dân
+                  vùng đất này cho một năm mưa thuận gió hòa, mùa màng bội thu.
+                </p>
+                <figure>
+                  <img
+                    src="https://mia.vn/media/uploads/blog-du-lich/top-11-le-hoi-thanh-hoa-mang-dam-net-dep-van-hoa-mien-trung-09-1680955782.jpeg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://mia.vn/cam-nang-du-lich/top-11-le-hoi-thanh-hoa-mang-dam-net-dep-van-hoa-mien-trung-11850"
+                      target="_blank"
+                      >mia.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong> Lễ hội Lê Hoàn</strong></mark>
+                <p>Thời gian: <u> Ngày 7 - 9/3 Âm lịch</u></p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >Thôn Trung Lập, Xã Xuân Lập, Huyện Thọ Xuân, Tỉnh Thanh
+                    Hóa</u
+                  >
+                </p>
+                <p>
+                  Lễ hội Lê Hoàn với quy mô cấp tỉnh là sự kiện văn hóa mà bạn
+                  có thể tham gia nếu du lịch Thanh Hóa vào tháng 3 Âm lịch. Lễ
+                  hội này nhằm tưởng nhớ vua Lê Đại Hành - người đã lãnh đạo
+                  nhân dân đánh bại nhà Tống trong cuộc chiến xâm lược, đồng
+                  thời khơi dậy truyền thống “uống nước nhớ nguồn” và tạo nên
+                  một hoạt động có thể giao lưu văn hóa thông qua những màn múa
+                  nghệ thuật, trò chơi dân gian…
+                </p>
+                <figure>
+                  <img
+                    src="https://mia.vn/media/uploads/blog-du-lich/top-11-le-hoi-thanh-hoa-mang-dam-net-dep-van-hoa-mien-trung-10-1680955782.jpeg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://mia.vn/cam-nang-du-lich/top-11-le-hoi-thanh-hoa-mang-dam-net-dep-van-hoa-mien-trung-11850"
+                      target="_blank"
+                      >mia.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ hội Mai An Tiêm</strong></mark>
+                <p>Thời gian: <u>Ngày 12 - 14/3 Âm lịch hàng năm </u></p>
+                <p>Địa điểm: <u>Huyện Nga Sơn, Tỉnh Thanh Hóa</u></p>
+                <p>
+                  Lễ hội Mai An Tiêm được tổ chức ngay tại khu đền thờ thuộc địa
+                  bàn huyện Nga Sơn, tỉnh Thanh Hóa với mục đích tưởng nhớ bậc
+                  tiền nhân đã có công khai phá, mở mang bờ cõi và mang đến nghề
+                  canh nông cho dân trong vùng. Sự kiện văn hóa này gồm 2 phần
+                  chính là lễ và hội. Trong phần lễ, ban quản lý đền thờ và các
+                  bậc trưởng lão sẽ đứng ra tổ chức các hoạt động rước kiệu,
+                  dâng hương, tế lễ… Phần hội sẽ là khoảng thời gian mà bạn có
+                  thể chìm đắm vào những vở kịch được sân khấu hóa chuyên nghiệp
+                  tái hiện sự tích Mai An Tiêm.
+                </p>
+                <figure>
+                  <img src="" class="w3-container" alt="" />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://mia.vn/cam-nang-du-lich/top-11-le-hoi-thanh-hoa-mang-dam-net-dep-van-hoa-mien-trung-11850"
+                      target="_blank"
+                      >mia.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="DITICH">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">
+            DI TÍCH, DI SẢN VĂN HOÁ
+          </h1>
+        </header>
+        <article>
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              -Một số di tích lịch sử:
+            </summary>
+            <ol type="1">
+              <li>
+                Thành Nhà Hồ<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/eA4xUu7X8EdfSMyZ8"
+                  target="_blank"
+                  >Vĩnh Tiến, Vĩnh Lộc District, Thanh Hoa, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích kiến trúc – quân sự. <br />
+                <figure>
+                  <img
+                    src="https://thanhhoatoplist.com/wp-content/uploads/2024/04/thanh-nha-ho-thanhhoatoplist.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://thanhhoatoplist.com/top-8-cac-di-tich-lich-su-o-thanh-hoa-nhat-dinh-phai-ghe-den/"
+                      target="_blank"
+                      >thanhhoatoplist.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Khu Di Tích Lam Kinh<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/PykiY3jVXBACJVpL7"
+                  target="_blank"
+                  >Xuân Lam, Thọ Xuân District, Thanh Hoa, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - kiến trúc. <br />
+                <figure>
+                  <img
+                    src="https://thanhhoatoplist.com/wp-content/uploads/2024/04/khu-di-tich-lam-kinh-thanhhoatoplist.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://thanhhoatoplist.com/top-8-cac-di-tich-lich-su-o-thanh-hoa-nhat-dinh-phai-ghe-den/"
+                      target="_blank"
+                      >thanhhoatoplist.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Khu Di Tích đền Bà Triệu<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/TdEv9JyYF8WHwQJKA"
+                  target="_blank"
+                  >QL1A, thôn Phú Điền, Hậu Lộc, Thanh Hóa, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - văn hoá. <br />
+                <figure>
+                  <img
+                    src="https://thanhhoatoplist.com/wp-content/uploads/2024/04/khu-di-tich-ba-trieu-thanhhoatoplist.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://thanhhoatoplist.com/top-8-cac-di-tich-lich-su-o-thanh-hoa-nhat-dinh-phai-ghe-den/"
+                      target="_blank"
+                      >thanhhoatoplist.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Di Tích Khảo Cổ Hang Con Moong<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/gKKwaq6ZiF58gdL86"
+                  target="_blank"
+                  >7J7F+MF6, Thành Yên, Thạch Thành, Thanh Hóa, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích Khảo cổ. <br />
+                <figure>
+                  <img
+                    src="https://thanhhoatoplist.com/wp-content/uploads/2024/04/di-tich-khao-co-hang-con-moong-thanhhoatoplist.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://thanhhoatoplist.com/top-8-cac-di-tich-lich-su-o-thanh-hoa-nhat-dinh-phai-ghe-den/"
+                      target="_blank"
+                      >thanhhoatoplist.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Đền Thờ Lê Hoàn<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/7iHr9BodoDwg8aC99"
+                  target="_blank"
+                  >XGFM+JJG, Unnamed Road, Xuân Lập, Thọ Xuân, Thanh Hóa,
+                  Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - văn hoá. <br />
+                <figure>
+                  <img
+                    src="https://thanhhoatoplist.com/wp-content/uploads/2024/04/den-tho-le-hoan-thanhhoatoplist.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://thanhhoatoplist.com/top-8-cac-di-tich-lich-su-o-thanh-hoa-nhat-dinh-phai-ghe-den/"
+                      target="_blank"
+                      >thanhhoatoplist.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Cầu Hàm Rồng<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/Fw4TSYy9M8pC7woq8"
+                  target="_blank"
+                  >Thanh Hóa, Thanh Hoa, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - văn hoá. <br />
+                <figure>
+                  <img
+                    src="https://thanhhoatoplist.com/wp-content/uploads/2024/04/cau-ham-rong-thanhhoatoplist.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://thanhhoatoplist.com/top-8-cac-di-tich-lich-su-o-thanh-hoa-nhat-dinh-phai-ghe-den/"
+                      target="_blank"
+                      >thanhhoatoplist.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Thái Miếu Nhà Hậu Lê<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/X3phQR4D6rZXrhog6"
+                  target="_blank"
+                  >Kiều Đại, P. Phú Sơn, Thanh Hóa, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - văn hoá. <br />
+                <figure>
+                  <img
+                    src="https://thanhhoatoplist.com/wp-content/uploads/2024/04/thai-mieu-nha-hau-le-thanhhoatoplist.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://thanhhoatoplist.com/top-8-cac-di-tich-lich-su-o-thanh-hoa-nhat-dinh-phai-ghe-den/"
+                      target="_blank"
+                      >thanhhoatoplist.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Đền Thờ Mai An Tiêm<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/DGkaTm5zoyqfEy9r9"
+                  target="_blank"
+                  >22WW+HFW, Nga phú, Nga Sơn, Thanh Hóa, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - văn hoá. <br />
+                <figure>
+                  <img
+                    src="https://thanhhoatoplist.com/wp-content/uploads/2024/04/den-tho-mai-an-tiem-thanhhoatoplist.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://thanhhoatoplist.com/top-8-cac-di-tich-lich-su-o-thanh-hoa-nhat-dinh-phai-ghe-den/"
+                      target="_blank"
+                      >thanhhoatoplist.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              -Ngoài ra còn có các di sản văn hoá phi vật thể như:
+            </summary>
+            <ol type="1">
+              <li>
+                -Ca trù <br />
+                - Loại hình: Nghệ thuật trình diễn dân gian<br />
+                <figure>
+                  <img
+                    src="https://tse1.mm.bing.net/th/id/OIP.nmFGx3AvxSw4nUghbfsKMwHaE8?cb=defcache2defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://visitvinhphuc.com/vi/blog/details/hat-ca-tru-38"
+                      target="_blank"
+                      >visitvinhphuc.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Hát Sắc bùa của người Mường<br />
+                - Loại hình: Nghệ thuật trình diễn dân gian<br />
+                <figure>
+                  <img
+                    src="https://tse1.mm.bing.net/th/id/OIP.J9eK-5kNX_I2Fa6yS2SKEwHaD4?cb=defcache2defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://tintuc6666.blogspot.com/2022/08/hat-sac-bua-cua-nguoi-muong-le-hoi-en.html"
+                      target="_blank"
+                      >tintuc6666.blogspot.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội Mường Xia<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://images.baodantoc.vn/thumbs/600x315/uploads/2023/Th%C3%A1ng%202/Ng%C3%A0y_15/TRUNG/Thanh%20H%C3%B3a/a%201%2C%20l%E1%BB%85%20h%E1%BB%99i%20M%C6%B0%E1%BB%9Dng%20Xia.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://baodantoc.vn/le-hoi-muong-xia-duoc-cong-nhan-di-san-van-hoa-phi-vat-the-quoc-gia-1676430692101.htm"
+                      target="_blank"
+                      >baodantoc.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội Sết Boóc Mạy<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://tse1.mm.bing.net/th/id/OIP.3H5jvB-wUqsUZt-Fx227dgHaEK?cb=defcache2defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.youtube.com/watch?v=aCI4NpTqXIA"
+                      target="_blank"
+                      >youtube.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ Hát múa ăn mừng dưới cây Bông (Kin Chiêng Bọoc Mạy) của
+                người Thái<br />
+                - Loại hình: Tập quán xã hội và tín ngưỡng<br />
+                <figure>
+                  <img
+                    src="https://cdn-images.vtv.vn/66349b6076cb4dee98746cf1/2025/02/17/1--15--23246737903080969235306.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vtv.vn/doi-song/linh-thieng-nghi-thuc-le-hat-mua-an-mung-duoi-cay-bong-cua-nguoi-thai-thanh-hoa-20250217000915019.htm"
+                      target="_blank"
+                      >vtv.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội cầu Ngư<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://th.bing.com/th/id/OIP.gZamWyteITN8oH9gtG-5nwHaD7?o=7&cb=defcache2rm=3&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://nguoihanoi.vn/ve-xu-thanh-di-le-hoi-cau-ngu-68262.html"
+                      target="_blank"
+                      >nguoihanoi.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội đền Bà Triệu<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://file3.qdnd.vn/data/images/0/2023/03/11/hoangxuantrinh/5.jpg?dpi=150&quality=100&w=870"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.qdnd.vn/van-hoa/doi-song/le-hoi-den-ba-trieu-nam-2023-721405"
+                      target="_blank"
+                      >qdnd.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội đền Độc Cước<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://th.bing.com/th/id/OIP.p9Kingj9ieoC-jDHlJYePQHaF2?o=7&cb=defcache2rm=3&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://baotintuc.vn/doi-song-van-hoa/le-hoi-cau-phuc-den-doc-cuoc-o-thanh-hoa-20230307162628061.htm"
+                      target="_blank"
+                      >baotintuc.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội đền thờ Lê Hoàn<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://th.bing.com/th/id/OIP.wb4ZmIGbJ1yWiEkYqjcl1wHaEs?o=7&cb=defcache2rm=3&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.qdnd.vn/van-hoa/doi-song/thanh-hoa-to-chuc-le-hoi-den-tho-le-hoan-nam-2023-726407"
+                      target="_blank"
+                      >qdnd.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội đền Mưng<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://bvhttdl.mediacdn.vn/291773308735864832/2021/4/16/207d5095702t48331l0-1618558179514770859685.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://bvhttdl.gov.vn/thanh-hoa-cong-bo-danh-muc-di-san-van-hoa-phi-vat-the-quoc-gia-le-hoi-den-mung-20210416143431143.htm"
+                      target="_blank"
+                      >bvhttdl.gov.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội mường Ca Da<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://photo-baomoi.bmcdn.me/w700_r1/2019_12_23_361_33406168/882770cf9c8f75d12c9e.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://baomoi.com/le-hoi-muong-ca-da-tro-thanh-di-san-van-hoa-phi-vat-the-quoc-gia-c33406168.epi"
+                      target="_blank"
+                      >baomoi.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội Mường Khô<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://media.vneconomy.vn/images/upload/2024/02/19/img-20240219-154436.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vneconomy.vn/le-hoi-muong-kho-net-dep-van-hoa-mien-tay-xu-thanh.htm"
+                      target="_blank"
+                      >vneconomy.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội Nàng Han<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://laichau.gov.vn/upload/2000066/fck/files/NH1.JPG"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://laichau.gov.vn/tin-tuc-su-kien/so-nganh-huyen-thanh-pho/dac-sac-le-hoi-nang-han.html"
+                      target="_blank"
+                      >laichau.gov.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội trò Chiềng<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://th.bing.com/th/id/OIP.zy0D6KIn07Ed3agOYryM2wHaE8?o=7&cb=defcache2rm=3&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://baovanhoa.vn/doi-song-van-hoa/thanh-hoa-dac-sac-le-hoi-tro-chieng-80040.html"
+                      target="_blank"
+                      >baovanhoa.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Mo Mường<br />
+                - Loại hình: Tập quán xã hội và tín ngưỡng<br />
+                <figure>
+                  <img
+                    src="https://tse2.mm.bing.net/th/id/OIP.ohO1AZ1bjWnZQcs6N3wkXgHaFA?cb=defcache2defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.qdnd.vn/van-hoa/doi-song/tap-quan-xa-hoi-va-tin-nguong-mo-muong-duoc-cong-nhan-la-di-san-van-hoa-phi-vat-the-quoc-gia-718308"
+                      target="_blank"
+                      >qdnd.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Múa đèn xếp chữ, hát chèo chải cổ trong Lễ hội Ngư Võng
+                phường<br />
+                - Loại hình: Nghệ thuật trình diễn dân gian<br />
+                <figure>
+                  <img
+                    src="https://th.bing.com/th/id/OIP.IEwmm8fgG-V0uCwpS39HKgHaEQ?o=7&cb=defcache2rm=3&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://dantocphattrien.vietnamnet.vn/thanh-hoa-mua-den-xep-chu-va-hat-cheo-chai-co-don-nhan-di-san-van-hoa-phi-vat-the-quoc-gia-1708511721988.htm"
+                      target="_blank"
+                      >dantocphattrien.vietnamnet.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Nghề đúc đồng cổ truyền làng Chè (Trà Đông)<br />
+                - Loại hình: Nghề thủ công truyền thống<br />
+                <figure>
+                  <img
+                    src="https://truyenhinhthanhhoa.qltns.mediacdn.vn/dataimages/201809/original/resize_images5438225_3.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://truyenhinhthanhhoa.vn/nghe-duc-dong-co-truyen-lang-che-tra-dong-xa-thieu-trung-tro-thanh-di-san-van-hoa-phi-vat-the-quoc-gia-1808144726.htm"
+                      target="_blank"
+                      >truyenhinhthanhhoa.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Nghi lễ Nhảng chập đáo (Tết nhảy) của người Dao Quần chẹt<br />
+                - Loại hình: Tập quán xã hội và tín ngưỡng<br />
+                <figure>
+                  <img
+                    src="https://media.lamchame.vn/images/2019/02/06/tet-nguoi-dao-2.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://sohuutritue.net.vn/le-hoi-tet-nhay-cua-nguoi-dao-d46157.html"
+                      target="_blank"
+                      >sohuutritue.net.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Trò diễn Pôồn Pôông của người Mường<br />
+                - Loại hình: Nghệ thuật trình diễn dân gian<br />
+                <figure>
+                  <img
+                    src="https://vnanet.vn/Data/Articles/2023/11/26/7099310/vna_potal_van_hoa_soi_duong_tai_hien_le_poon_poong_cua_dan_toc_muong_tinh_thanh_hoa_stand.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vnanet.vn/vi/anh/anh-thoi-su-trong-nuoc-1014/tai-hien-le-poon-poong-cua-dan-toc-muong-tinh-thanh-hoa-7099296.html"
+                      target="_blank"
+                      >vnanet.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Ngũ trò Viên Khê (dân ca Đông Anh)<br />
+                - Loại hình: Nghệ thuật trình diễn dân gian<br />
+                <figure>
+                  <img
+                    src="https://th.bing.com/th/id/OIP.8_SeCCWLiP740ichtevF0QHaFA?o=7&cb=defcache2rm=3&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.vietnam.vn/ngu-tro-dan-ca-dong-anh-o-thanh-hoa-la-cac-tro-gi-ma-duoc-cong-nhan-di-san-phi-vat-the-quoc-gia/"
+                      target="_blank"
+                      >vietnam.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Trò Xuân Phả<br />
+                - Loại hình: Nghệ thuật trình diễn dân gian<br />
+                <figure>
+                  <img
+                    src="https://th.bing.com/th/id/OIP.EoweN4tQ6-kXnF2vb9geEAHaFS?o=7&cb=defcache2rm=3&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://hodinh.vn/tin-tuc-thanh-hoa-dua-quottro-dien-xuan-phaquot-tham-du-lien-hoan-trinh-dien-di-san-van-hoa-phi-vat-the-quoc-gia-118.html"
+                      target="_blank"
+                      >hodinh.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Xường giao duyên của người Mường<br />
+                - Loại hình: Nghệ thuật trình diễn dân gian<br />
+                <figure>
+                  <img
+                    src="https://vnn-imgs-f.vgcloud.vn/2019/02/25/08/hat-xuong-giao-duyen-cua-nguoi-muong-tro-thanh-di-san-van-hoa-phi-vat-the-quoc-gia.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vietnamnet.vn/hat-xuong-giao-duyen-cua-nguoi-muong-thanh-di-san-van-hoa-phi-vat-the-quoc-gia-509897.html"
+                      target="_blank"
+                      >vietnamnet.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="GIAODUC">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">GIÁO DỤC</h1>
+        </header>
+        <article>
+          <p>
+            <mark><strong>Truyền thống hiếu học của Thanh Hóa:</strong></mark>
+            Thanh Hóa là quê hương của những nho sĩ. Trong thời kỳ phong kiến,
+            Thanh Hóa có
+            <u>3</u> trạng nguyên, <u>hàng trăm</u> tiến sĩ, bảng nhãn, thám hoa
+            (xếp thứ <u>7</u> toàn quốc sau Bắc Ninh, Hải Phòng, Hà Nội, Ninh
+            Bình, Hưng Yên).
+          </p>
+
+          <p>
+            <mark><strong>Thành tích giáo dục hiện đại:</strong></mark>
+            Năm <u>2008</u>, trong kỳ thi tuyển sinh Cao đẳng và Đại học, Thanh
+            Hóa có <u>nhiều thủ khoa nhất nước</u>.
+          </p>
+
+          <p>
+            <mark><strong>Quy mô giáo dục:</strong></mark>
+            Tỉnh Thanh Hóa có hơn <u>2.000</u> cơ sở giáo dục. Năm học
+            <u>2020 - 2021</u>, tỉnh có hơn <u>870.000</u> học sinh, sinh viên,
+            học viên.
+          </p>
+        </article>
+        <p style="font-size: 15px">
+          (nguồn thông tin:
+          <a href="https://vi.wikipedia.org/wiki/Thanh_H%C3%B3a"
+            >wiki Thanh Hoá</a
+          >
+          )
+        </p>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="KINHTE">
+        <br />
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">KINH TẾ</h1>
+        </header>
+        <article>
+          <h2 style="text-align: left">TÓM TẮT PHÁT TRIỂN KINH TẾ THANH HOÁ</h2>
+          <p>
+            <mark><strong>Công nghiệp</strong></mark
+            ><br />
+            Thanh Hóa có nền công nghiệp phát triển ổn định. Trong 6 tháng đầu
+            năm 2009, chỉ số phát triển công nghiệp của tỉnh tăng <u>8,2%</u>.
+            Đến năm 2011, tỉnh xếp thứ <u>24/63</u> trong bảng xếp hạng Chỉ số
+            năng lực cạnh tranh cấp tỉnh. Đến năm 2018, Thanh Hóa có
+            <u>7</u> khu công nghiệp tập trung và phân tán, bao gồm Bỉm Sơn,
+            Nghi Sơn, Lễ Môn, Đình Hương, Lam Sơn, Hoàng Long và FLC Hoàng Long.
+          </p>
+
+          <p>
+            <mark><strong>Nông nghiệp</strong></mark
+            ><br />
+            Thanh Hóa là tỉnh có diện tích đất nông nghiệp lớn, đến năm 2004 là
+            <u>239.842 ha</u>, chiếm <u>21,6%</u> diện tích tự nhiên. Sản lượng
+            lương thực của tỉnh đạt <u>1,65 triệu tấn</u> năm 2013 và tăng lên
+            <u>1,737 triệu tấn</u> vào năm 2014.
+          </p>
+
+          <p>
+            <mark><strong>Lâm nghiệp</strong></mark
+            ><br />
+            Diện tích đất lâm nghiệp của tỉnh năm 2014 là <u>626.576,1 ha</u>,
+            với độ che phủ rừng đạt <u>51%</u> vào năm 2013. Thanh Hóa có tài
+            nguyên rừng phong phú, bao gồm các loài cây quý như lát, pơ mu, lim
+            xanh và các loại tre, nứa. Tỉnh là nơi có diện tích luồng lớn nhất
+            cả nước, trên <u>71.000 ha</u>. Lâm nghiệp Thanh Hóa phát triển theo
+            hướng kết hợp khai thác kinh tế, bảo tồn, nghiên cứu, giáo dục và du
+            lịch sinh thái, với nhiều khu rừng đặc dụng và khu bảo tồn thiên
+            nhiên như Bến En, Cúc Phương, Pù Luông và Pù Hu.
+          </p>
+
+          <p>
+            <mark><strong>Ngư nghiệp</strong></mark
+            ><br />
+            Với <u>102 km</u> bờ biển và vùng lãnh hải rộng <u>17.000 km²</u>,
+            Thanh Hóa có tiềm năng lớn về đánh bắt thủy sản. Đến năm 2014, toàn
+            tỉnh có <u>7.308</u> tàu đánh bắt cá ngoài khơi.
+          </p>
+
+          <p>
+            <mark><strong>Dịch vụ</strong></mark
+            ><br />
+            Ngành dịch vụ - thương mại của Thanh Hóa phát triển mạnh, đặc biệt ở
+            thành phố Thanh Hóa với các trung tâm thương mại, siêu thị, khách
+            sạn lớn như Vincom Plaza, Vinpearl, Aeon Mall. Sự phát triển này góp
+            phần tăng trưởng kinh tế, thu hút đầu tư và nâng cao chất lượng đời
+            sống của người dân.
+          </p>
+
+          <p>
+            <mark><strong>Giáo dục</strong></mark
+            ><br />
+            Thanh Hóa có truyền thống hiếu học lâu đời, từng có
+            <u>3 trạng nguyên</u> và nhiều tiến sĩ thời phong kiến. Tỉnh hiện có
+            hơn <u>2.000</u> cơ sở giáo dục, với hơn <u>870.000</u> học sinh,
+            sinh viên và học viên trong năm học 2020–2021.
+          </p>
+
+          <p>
+            <mark><strong>Dân cư</strong></mark
+            ><br />
+            Tính đến cuối năm 2022, Thanh Hóa có <u>4.357.523</u> dân, trong đó
+            tỷ lệ đô thị hóa đạt <u>38,02%</u>. Mật độ dân số là
+            <u>328 người/km²</u>, xếp thứ <u>28/63</u> tỉnh. Tỷ số giới tính ổn
+            định, và tôn giáo đa dạng với Công giáo chiếm đông nhất.
+          </p>
+        </article>
+        <figure
+          style="width: 80%; margin: auto"
+          class="w3-center chart-container"
+        >
+          <figcaption>
+            <h2 style="text-align: center">Biểu đồ GRDP Thanh Hoá 2016–2024</h2>
+            <p style="text-align: center">Đơn vị: tỷ đồng / %</p>
+          </figcaption>
+          <canvas id="grdpChartThanhHoa" class="w3-center"></canvas>
+        </figure>
+
+        <script>
+          const ctx = document
+            .getElementById("grdpChartThanhHoa")
+            .getContext("2d");
+
+          const grdpData = [
+            101000, 110000, 122000, 135000, 148000, 162000, 178000, 195000,
+            213000,
+          ];
+
+          const growthRate = [
+            0.08, 0.085, 0.09, 0.095, 0.09, 0.092, 0.09, 0.088, 0.085,
+          ];
+
+          new Chart(ctx, {
+            type: "bar",
+            data: {
+              labels: [
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022",
+                "2023",
+                "2024",
+              ],
+              datasets: [
+                {
+                  label: "GRDP Thanh Hóa (tỷ đồng)",
+                  data: grdpData,
+                  backgroundColor: "#4CAF50",
+                  yAxisID: "y",
+                },
+                {
+                  label: "Tăng trưởng GRDP (%)",
+                  data: growthRate.map((v) => v * 100),
+                  backgroundColor: "#FF9800",
+                  yAxisID: "y1",
+                },
+              ],
+            },
+            options: {
+              responsive: true,
+              plugins: {
+                legend: { position: "top" },
+                title: {
+                  display: true,
+                  text: "GRDP và Tăng trưởng kinh tế Thanh Hóa (2016–2024)",
+                },
+              },
+              scales: {
+                y: {
+                  beginAtZero: false,
+                  position: "left",
+                  title: { display: true, text: "GRDP (tỷ đồng)" },
+                },
+                y1: {
+                  beginAtZero: true,
+                  position: "right",
+                  grid: { drawOnChartArea: false },
+                  title: { display: true, text: "Tăng trưởng (%)" },
+                },
+                x: { title: { display: true, text: "Năm" } },
+              },
+            },
+          });
+        </script>
+        <p style="font-size: 14px; text-align: center; margin-top: 5px">
+          Nguồn:Tổng cục Thống kê Việt Nam và ước tính từ số liệu GRDP của tỉnh
+          Thanh Hoá
+          <br />
+          <a href="https://vi.wikipedia.org/wiki/Thanh_H%C3%B3a" target="_blank"
+            >wiki Thanh Hoá</a
+          >
+        </p>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="AMTHUC">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">ẨM THỰC</h1>
+          <h2>-Thanh Hoá có rất nhiều đặc sản nổi tiếng có thể kể đến như:</h2>
+        </header>
+        <ol type="1">
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Chả Tôm
+              </summary>
+              <p>
+                Nếu đến Thanh Hoá mà lại chưa thưởng thức qua món chả tôm thì
+                đúng là một sự mất mát to lớn. Cách chế biến món này lại vô cùng
+                đơn giản với những nguyên liệu như tôm, thịt ba chỉ được xào
+                chung với gấc để tạo nên màu sắc đẹp mắt, cuốn chung với bánh
+                phở và đem nướng trên nhưng xiên tre nóng hổi thơm lừng.
+              </p>
+              <p>
+                Khi ăn bạn sẽ cảm nhận được vị ngọt bùi của tôm thịt lớp vỏ
+                ngoài thì giòn giòn chấm cùng với nước mắm chua ngọt thì quả
+                thật là xuất sắc luôn phải không nào.
+              </p>
+              -Giá tham khảo:Khoảng 30.000 đồng/phần<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/w3FBtuhMDMERtqVR9"
+                >14 Nhà Thờ, P. Trường Thi, Thanh Hóa</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/10/27/1393999/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-202201141359574079.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-1393999"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh ít
+              </summary>
+              <p>
+                Món bánh ít được nhào nặn bởi những bàn tay của người xứ sở
+                Thanh Hoá, phần vỏ được làm bằng bột nếp và đường thốt nốt bên
+                trong nhân làđậu xanh được gói gọn trong những chiếc lá chuối
+                rồi đem đi hấp.
+              </p>
+              <p>
+                Những chiếc bánh ra lò vừa nóng hổi vừa thơm lừng lớp vỏ thì dai
+                dai, nhân đậu xanh thì béo bùi, chắc chắn sẽ khiến bạn phải
+                ghiền ngay từ lần đầu thưởng thức món này cho mà xem.
+              </p>
+              -Giá tham khảo:Khoảng 15.000 đồng/đĩa<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/QVk37hDHSzJc9Ex5A"
+                >288 Nguyễn Trãi, P. Điện Biên, Thanh Hóa, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/10/27/1393999/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-202110272320072491.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-1393999"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Mắm Cáy
+              </summary>
+              <p>
+                Sau những chuyến du lịch dài hạn thì chắc chắn không thể thiếu
+                các món ăn đặc sản để dành tặng người thân. Trong số đó mắm cáy
+                là một trong những lựa chọn lý tưởng dùng để làm quà.
+              </p>
+              <p>
+                Món này được làm từ con vật cùng tên, cáy sau khi mua về bạn sơ
+                chế sạch rồi giã nhuyễn ủ với muối khoảng 10 ngày đem phơi nắng
+                7 ngày là đã có thể dùng được. Mắm cáy có vị ngọt bùi thơm nồng
+                của cáy chấm cùng với thịt luộc là hết sảy luôn nhé.
+              </p>
+              -Giá tham khảo:Khoảng 30.000 đồng/chai<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/RsByBt9n8QSLupSr7"
+                >Ba Lang, Nghi Sơn, Thanh Hoa 45000, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/10/27/1393999/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-202110272322008252.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-1393999"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Cá Rô Đầm Sét
+              </summary>
+              <p>
+                Nếu có dịp ghé qua Thanh Hoá nhất định phải thử qua món cá rô
+                Đầm Sét một món ăn dân dã nhưng hương vị lại vô cùng hấp dẫn. Cá
+                rô được chiên tươi với dầu thực vật giòn rụm cắn vào một miếng
+                chắc chắn sẽ khiến bạn phải thích mê luôn đấy.
+              </p>
+              -Giá tham khảo:Khoảng 70.000 đồng/phần<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/4xHGt2U29Da7DXrC7"
+                >1 Phan Chu Trinh, P. Điện Biên, Thanh Hóa</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/10/27/1393999/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-202110272322322983.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-1393999"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh Răng Bừa
+              </summary>
+              <p>
+                Bánh răng bừa Thanh Hóa là một loại bánh truyền thống và cũng là
+                món bánh dùng để tiến vua ngày xưa, bánh có hình dáng giống
+                chiếc răng bừa. Bên ngoài vỏ được làm từ bột gạo tẻ bên trong
+                nhân gồm có thịt ba chỉ, mộc nhĩ, hành mỡ,...chấm cùng với nước
+                mắm thì khỏi chê vào đâu được.
+              </p>
+              -Giá tham khảo:Khoảng 2.000 đồng/chiếc<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/QtT3tcmDLNNy1jwE9"
+                >Đông Tiến, Thanh Hóa, Thanh Hoa, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/10/27/1393999/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-202110272323046113.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-1393999"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh Cuốn Thanh Hoá
+              </summary>
+              <p>
+                Bánh cuốn Thanh Hóa là món ăn đặc sản được nhiều người yêu
+                thích, bánh được làm từ thịt nạc, tôm, hành và mộc nhĩ có độ mềm
+                dai nhất định, không bị bở. Chấm cùng với nước mắm rắc thêm một
+                ít hành khô lên chắc chắn sẽ khiến bạn khó mà quên được ngay từ
+                lần đầu thưởng thức.
+              </p>
+              -Giá tham khảo:Khoảng 10.000 - 15.000 đồng/đĩa<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/cTahbfNFSthVveNBA"
+                >273 TP Thanh Hóa - Sầm Sơn, P. Lam Sơn, Thanh Hóa, Việt Nam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/10/27/1393999/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-202110272323317602.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-1393999"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh nhè
+              </summary>
+              <p>
+                Bánh nhè được nấu bằng đường mật mía và gừng nên vị ngọt đậm đà
+                thơm lừng, bên trong bánh là nhân dừa, đậu xanh khi ăn bạn sẽ
+                cảm nhận được vị dẻo của bột nếp, vị ngọt thơm của nước đường.
+                Nên đến Thanh Hoá nhất định phải ăn qua món này nhé.
+              </p>
+              -Giá tham khảo:Khoảng 5.000 - 10.000 đồng/chén<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/2uB592sDRvYXUUp79"
+                >tp, QL45, P. Phú Sơn, Thanh Hóa, Việt Nam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/10/27/1393999/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-202110272324317028.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-1393999"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh đúc sốt
+              </summary>
+              <p>
+                Nếu hỏi người Thanh Hóa món ăn nào gắn liền với tuổi thơ, thì
+                chắc có lẽ ai cũng chọn bánh đúc sốt. Món ăn này có màu xanh lá
+                tươi mát, với nguyên liệu chính là bột gạo và đậu xanh, món này
+                ăn ngon nhất khi ăn nóng, với lớp đậu xanh ngon ngọt phủ lên
+                trên.
+              </p>
+              -Giá tham khảo: Khoảng 15.000 đồng/cốc<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/Bg3LDDqUPJV7Nkek7"
+                >113 Thôi Hữu, P. Ngọc Trang, Thanh Hóa, 02373, Việt Nam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/10/27/1393999/thanh-hoa-co-dac-san-gi-15-dac-san-thanh-hoa-mua-lam-qua-202206142108345042.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-1393999"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh đa Minh Châu
+              </summary>
+              <p>
+                Bánh tráng Minh Châu được làm bằng bột gạo, thêm một chút mè
+                đen, ăn kèm với các món ăn với các món hến thái nhỏ xào với gia
+                vị và chút rau thơm, hơi cay. Bánh tráng sống cũng có thể xắt
+                nhỏ xào cùng lươn, ếch.
+              </p>
+              -Giá tham khảo:Khoảng 10.000 đồng/chiếc<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/H8AnpoQowBkmuG4T6"
+                >tp, QL45, P. Phú Sơn, Thanh Hóa, Việt Nam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/10/27/1393999/thanh-hoa-co-dac-san-gi-15-dac-san-thanh-hoa-mua-lam-qua-202206142108525795.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-1393999"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Cá rô đầm sét nướng
+              </summary>
+              <p>
+                Cá rô nhỏ cỡ hai ngón tay, thịt màu vàng, săn chắc và rất thơm
+                ngon. Chúng được chế biến thành món chiên hoặc nấu canh. Trong
+                đó, ngon nhất có thể kể đến chiên, và để tăng thêm hương vị cá
+                thường được ăn kèm với một đĩa rau húng cay và dưa chua mặn.
+              </p>
+              -Giá tham khảo:Khoảng 70.000đồng/dĩa<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/H8AnpoQowBkmuG4T6"
+                >tp, QL45, P. Phú Sơn, Thanh Hóa, Việt Nam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/10/27/1393999/thanh-hoa-co-dac-san-gi-15-dac-san-thanh-hoa-mua-lam-qua-202206142109086702.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-1393999"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Nem chua Thanh Hoá
+              </summary>
+              <p>
+                Món nem chua Thanh Hoá chắc ta không cần phải giới thiệu thêm
+                nữa vì nó quá nổi tiếng và được xem là món làm nên tên tuổi từ
+                Thanh Hoá.
+              </p>
+              <p>
+                Món này có công thức rất đơn giản chỉ cần thịt heo nạc và da heo
+                cùng với các gia vị khác như thính gạo, gừng, ớt...Đem cuộn lại
+                để 2-3 ngày là có thể thưởng thức rồi. Hương vị dai ngon sừng
+                sực quyện với vị chua chua cay cay sẽ khiến bạn khó mà cưỡng lại
+                được.
+              </p>
+              -Giá tham khảo: Khoảng 3.000 đồng/chiếc<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/uJMQ59RH5oEq2Qui7"
+                >SN41 Hải Thượng Lãn Ông, P. Phú Sơn, Thanh Hóa, Việt Nam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/10/27/1393999/thanh-hoa-co-dac-san-gi-15-dac-san-thanh-hoa-mua-lam-qua-202210071447153317.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-1393999"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh Gai Tứ Trụ
+              </summary>
+              <p>
+                Bánh gai Tứ Trụ nghe qua có vẻ khá lạ lẫm nhưng thực chất đây là
+                món bánh vô cùng nổi tiếng mà bạn không thể bỏ qua khi đến Thanh
+                Hoá.
+              </p>
+              <p>
+                Những chiếc lá gai được đem đi xay để lấy phần nước cốt trộn
+                cùng với bột để tạo vỏ bánh. Bên trong nhân là sự kết hợp giữa
+                đậu xanh xay nhuyễn và dừa nạo, cuối cùng là đem gói với lá
+                chuối rồi hấp lên nữa là đã xong rồi đấy.
+              </p>
+              -Giá tham khảo:Khoảng 5.000 đồng/chiếc<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/aNjPp3x2xyb9gVTm9"
+                >QL47, TT. Sao Vàng, Thọ Xuân, Thanh Hóa, Việt Nam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/10/27/1393999/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-202110272321219189.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-1393999"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Mắm Tép
+              </summary>
+              <p>
+                Mắm tép là món ăn đặc sản mà hầu hết du khách nào đến đây cũng
+                đều phải mê mẩn, mắm được làm từ những con tép tươi ngon sau khi
+                làm sạch thì giã nhuyễn rồi đem đi ủ lên men với thính thế là ta
+                đã hoàn thành xong rồi đấy.
+              </p>
+              -Giá tham khảo:Khoảng 100.000 đồng/chai<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/xocANS4TaYbAdV439"
+                >tổ 7 khu Xuân Hà, TT. Xuân Mai, Chương Mỹ, Hà Nội, Việt Nam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/10/27/1393999/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-202110272324035193.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-1393999"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Chè Lam Phủ Quảng
+              </summary>
+              <p>
+                Chè Lam Phủ Quảng là một loại kẹo đặc sản có một không hai tại
+                Thanh Hóa, nổi tiếng với nhiều bạn bè du khách. Chè Lam ở đây có
+                vị ngọt thanh nhẹ, giòn giòn rất đặc biệt hơn với những nơi
+                khác! Màu vàng nhẹ được phủ lên lớp bột trắng trong, xinh xắn,
+                còn gì tuyệt vời hơn khi ăn món kẹo này cùng 1 ly trà nóng, nhâm
+                nhi nhỉ.
+              </p>
+              -Giá tham khảo:Khoảng 22.000 - 50.000 đồng<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/bJLh97RtczbpKHr57"
+                >3J49+V48, TT. Vĩnh Lộc, Vĩnh Lộc, Thanh Hóa, Việt Nam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/10/27/1393999/thanh-hoa-co-dac-san-gi-15-dac-san-thanh-hoa-mua-lam-qua-202206142109404409.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-1393999"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bưởi Tiến Vua
+              </summary>
+              <p>
+                Vùng đất Thọ Xương của vùng đất Phủ Quảng có một loại trái cây
+                vô cùng nổi tiếng và đặc biệt đó chính là bưởi tiến vua. Giống
+                bưởi tiến vua này không có màu xanh như những giống bưởi khác,
+                nó có vỏ ngoài màu vàng cam đặc trưng, thêm mùi thơm và vị ngọt
+                dịu chẳng thể hòa lẫn.
+              </p>
+              -Giá tham khảo:Khoảng 100.000 - 200.000 đồng/quả<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/2gFHFibMjVTDpm7R8"
+                >QMWJ+H2F, Đông Hoà, Thanh Hóa, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/10/27/1393999/thanh-hoa-co-dac-san-gi-15-dac-san-thanh-hoa-mua-lam-qua-202206142109585657.jpg"
+                  class="w3-container"
+                  alt="bu"
+                /><br />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-1393999"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+        </ol>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="DULICH">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">DU LỊCH</h1>
+          <h2>-Thanh Hoá có những điểm du lịch nổi tiếng như:</h2>
+        </header>
+        <ol type="1">
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Bãi biển Sầm Sơn
+              </summary>
+              <p class="detail-content">
+                Thanh Hóa là một tỉnh ven biển của miền Bắc, không chỉ là nơi
+                gìn giữ những di sản văn hóa và lịch sử mà còn là điểm đến lý
+                tưởng cho những ai muốn trải nghiệm sự kết hợp hoàn hảo giữa
+                thiên nhiên và con người.
+              </p>
+              <p>
+                Đặt chân đến Thanh Hóa, du khách sẽ được đắm chìm trong bức
+                tranh sơn thủy hữu tình với những bãi biển dài mênh mông, những
+                khu bảo tồn thiên nhiên hùng vĩ và những di tích lịch sử tráng
+                lệ.
+              </p>
+              <p>
+                Một trong những điểm đến không thể bỏ qua khi nói đến du lịch
+                Thanh Hóa chính là bãi biển Sầm Sơn. Với vị trí thuận lợi chỉ
+                cách trung tâm thành phố Thanh Hóa chỉ 16km, Sầm Sơn luôn là lựa
+                chọn hàng đầu cho những ai muốn tìm một nơi nghỉ dưỡng, thư giãn
+                sau những ngày làm việc căng thẳng. Được mệnh danh là "viên
+                ngọc" của Thanh Hóa, Sầm Sơn luôn tự hào với bãi biển dài, cát
+                mịn và nước biển trong xanh.
+              </p>
+              <p>
+                Không chỉ thu hút bởi vẻ đẹp tự nhiên, Sầm Sơn còn là nơi lý
+                tưởng để du khách tham gia nhiều hoạt động giải trí như lướt
+                ván, dù kéo hay thậm chí là tham gia các tour lặn biển khám phá
+                đáy đại dương.
+              </p>
+              <figure>
+                <img
+                  src="https://mia.vn/media/uploads/blog-du-lich/du-lich-thanh-hoa-01-1695656192.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://mia.vn/cam-nang-du-lich/du-lich-thanh-hoa-12811"
+                    target="_blank"
+                    >mia.vn</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Biển Hải Tiến
+              </summary>
+              <p class="detail-content">
+                Nằm ẩn mình giữa lòng tỉnh Thanh Hóa, biển Hải Tiến tự hào là
+                một trong những bãi biển đẹp nhất của xứ Thanh mang đến cho du
+                khách một không gian nghỉ dưỡng lý tưởng. Được quy hoạch và đầu
+                tư một cách tinh tế, Hải Tiến không chỉ thu hút bởi bãi biển
+                xanh mát mà còn bởi hạ tầng du lịch hiện đại và tiện ích đẳng
+                cấp.
+              </p>
+              <p>
+                Có thể nói, với bờ cát trắng mịn màng và làn nước trong xanh,địa
+                điểm du lịch Thanh Hóa này chính là nơi lý tưởng để du khách thả
+                mình dưới dòng nước mát lạnh, ngắm nhìn bầu trời rộng lớn và
+                thưởng thức những món hải sản tươi ngon. Đặc biệt, với độ dốc
+                nhẹ, bãi biển này rất an toàn cho cả người lớn và trẻ em.
+              </p>
+              <figure>
+                <img
+                  src="https://mia.vn/media/uploads/blog-du-lich/du-lich-thanh-hoa-02-1695656192.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://mia.vn/cam-nang-du-lich/du-lich-thanh-hoa-12811"
+                    target="_blank"
+                    >mia.vn</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Biển Bãi Đông
+              </summary>
+              <p class="detail-content">
+                Bãi Đông nằm ẩn mình trên bán đảo Nghi Sơn chính là một điểm đến
+                đầy mới mẻ nhưng đã nhanh chóng trở thành điểm nóng trên bản đồ
+                du lịch Thanh Hóa. Đặc trưng bởi bãi biển hoang sơ, cát trắng
+                mịn và làn nước biển trong xanh, Bãi Đông mang đến cho du khách
+                một không gian thư giãn tuyệt đối, xa rời khỏi sự xô bồ của đời
+                sống đô thị.
+              </p>
+              <p>
+                Không chỉ là nơi tắm biển lý tưởng, Bãi Đông còn là thiên đàng
+                cho những ai yêu thích thả diều, ngắm bình minh và hoàng hôn hay
+                thực hiện những bức ảnh sống ảo đầy màu sắc. Đêm đến, không gì
+                tuyệt vời bằng việc tụ tập cùng bạn bè bên bãi biển, mở tiệc BBQ
+                bên cạnh tiếng sóng biển rì rào.
+              </p>
+              <figure>
+                <img
+                  src="https://mia.vn/media/uploads/blog-du-lich/du-lich-thanh-hoa-03-1695656192.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://mia.vn/cam-nang-du-lich/du-lich-thanh-hoa-12811"
+                    target="_blank"
+                    >mia.vn</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Biển Hải Hòa
+              </summary>
+              <p class="detail-content">
+                Biển Hải Hòa là một trong những bãi biển đẹp nhất miền Bắc với
+                vẻ đẹp còn rất nguyên sơ, bãi cát trắng mịn màng và làn nước
+                biển trong xanh. Điểm đặc trưng của biển Hải Hòa đó chính là
+                không gian yên bình, tiếng sóng vỗ nhẹ nhàng cùng bầu không khí
+                trong lành, mát mẻ. Đến đây, du khách sẽ được trải nghiệm những
+                giây phút thư giãn tuyệt vời, ngắm nhìn bình minh rực rỡ hay
+                hoàng hôn dần buông xuống biển.
+              </p>
+              <p>
+                Hơn nữa, bãi biển Hải Hòa rộng lớn trải dài tới hàng km, là nơi
+                lý tưởng để tắm biển và tham gia các hoạt động ngoài trời. Du
+                khách có thể tổ chức những bữa tiệc BBQ trên bãi biển, tham gia
+                các trò chơi teambuilding hay đơn giản chỉ là nằm trên bãi cát
+                ngắm nhìn biển và tận hưởng không khí trong lành.
+              </p>
+              <p>
+                Nếu bạn là người yêu thích thiên nhiên và muốn tìm một nơi yên
+                bình để nghỉ ngơi, thư giãn, biển Hải Hòa chính là lựa chọn hoàn
+                hảo. Đừng quên mang theo máy ảnh để ghi lại những khoảnh khắc
+                đẹp tại đây và chia sẻ cùng bạn bè, người thân nhé.
+              </p>
+              <figure>
+                <img
+                  src="https://mia.vn/media/uploads/blog-du-lich/du-lich-thanh-hoa-04-1695656192.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://mia.vn/cam-nang-du-lich/du-lich-thanh-hoa-12811"
+                    target="_blank"
+                    >mia.vn</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Vườn quốc gia Bến En
+              </summary>
+              <p class="detail-content">
+                Vườn Quốc gia Bến En được mệnh danh là “Hạ Long trên cạn” với vẻ
+                đẹp hoang sơ và đa dạng về cảnh quan. Bến En hội tụ đầy đủ các
+                cảnh quan từ núi, rừng, sông, hồ, điều này đã tạo nên một bức
+                tranh thiên nhiên hùng vĩ và đa dạng.
+              </p>
+              <p>
+                Đến với Bến En, bạn có thể tham gia nhiều hoạt động thú vị như
+                đi thuyền trên sông Mực, khám phá hệ sinh thái động thực vật,
+                thăm hang Ngọc, Viện bảo tàng, và trải nghiệm văn hóa địa
+                phương.
+              </p>
+              <p>
+                Đặc biệt, với hơn 15.000ha rừng nguyên sinh và tái sinh, Bến En
+                là nơi sinh sống của hơn 1000 loài động vật và nhiều loại thực
+                vật quý hiếm. Du khách có thể tham gia các tour trekking, khám
+                phá những con đường mòn xuyên rừng và chiêm ngưỡng vẻ đẹp của
+                thiên nhiên.
+              </p>
+              <figure>
+                <img
+                  src="https://mia.vn/media/uploads/blog-du-lich/du-lich-thanh-hoa-05-1695656192.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://mia.vn/cam-nang-du-lich/du-lich-thanh-hoa-12811"
+                    target="_blank"
+                    >mia.vn</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Vườn Quốc gia Cúc Phương
+              </summary>
+              <p class="detail-content">
+                Nằm giữa ba tỉnh Ninh Bình, Hòa Bình và Thanh Hóa, Vườn Quốc gia
+                Cúc Phương là một biểu tượng của vẻ đẹp thiên nhiên và thu hút
+                hàng trăm ngàn người đến đây tham quan.
+              </p>
+              <p>
+                Với diện tích lên tới 22.408ha, Cúc Phương không chỉ là một khu
+                rừng mưa nhiệt đới mà còn là nơi bảo tồn nhiều loài động vật và
+                thực vật quý hiếm.
+              </p>
+              <p>
+                Ngoài ra, vườn quốc gia này còn đa dạng các địa điểm tham quan.
+                Từ động Người Xưa, đỉnh Mây Bạc, hồ Yên Quang cho đến bản người
+                Mường, mỗi nơi đều mang một vẻ đẹp riêng và chứa đựng nhiều câu
+                chuyện lịch sử.
+              </p>
+              <p>
+                Vườn Quốc Gia Cúc Phương không chỉ là một điểm đến du lịch mà
+                còn là một trung tâm giáo dục về môi trường và bảo tồn thiên
+                nhiên. Đến với Cúc Phương, bạn không chỉ được trải nghiệm vẻ đẹp
+                thiên nhiên mà còn có cơ hội tìm hiểu về giá trị lịch sử và văn
+                hóa của khu vực này. Đây chắc chắn sẽ là một trải nghiệm đáng
+                nhớ cho mỗi du khách khi đến với Thanh Hóa.
+              </p>
+              <figure>
+                <img
+                  src="https://mia.vn/media/uploads/blog-du-lich/du-lich-thanh-hoa-20-1696224412.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://mia.vn/cam-nang-du-lich/du-lich-thanh-hoa-12811"
+                    target="_blank"
+                    >mia.vn</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Khu bảo tồn thiên nhiên Pù Luông
+              </summary>
+              <p class="detail-content">
+                Nằm giữa trái tim của Thanh Hóa, Pù Luông không chỉ là một khu
+                bảo tồn thiên nhiên với diện tích hùng vĩ mà còn là điểm đến lý
+                tưởng cho những ai muốn trải nghiệm sự yên bình và hòa mình vào
+                thiên nhiên.
+              </p>
+              <p>
+                Với độ cao lên tới 1.700m, Pù Luông mang trong mình một khí hậu
+                mát mẻ quanh năm, tạo nên một không gian lý tưởng cho việc nghỉ
+                dưỡng. Khám phá Pù Luông du khách sẽ được đắm chìm trong vẻ đẹp
+                của những thửa ruộng bậc thang xanh mướt và ngắm nhìn sự hùng vĩ
+                của rừng nguyên sinh.
+              </p>
+              <p>
+                Không chỉ vậy, Pù Luông còn là nơi lưu giữ những nét văn hóa
+                truyền thống của người dân tộc thiểu số. Bản Kho Mường hay chợ
+                phiên Phố Đoàn sẽ mang đến cho du khách những trải nghiệm độc
+                đáo, từ việc thưởng thức các món ăn đặc sản đến việc tìm hiểu về
+                cuộc sống hàng ngày của người dân nơi đây.
+              </p>
+              <figure>
+                <img
+                  src="https://mia.vn/media/uploads/blog-du-lich/du-lich-thanh-hoa-07-1695656285.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://mia.vn/cam-nang-du-lich/du-lich-thanh-hoa-12811"
+                    target="_blank"
+                    >mia.vn</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Suối cá thần Cẩm Lương
+              </summary>
+              <p class="detail-content">
+                Suối Cá Thần Cẩm Lương đã trở thành một điểm đến không thể bỏ
+                qua cho những ai yêu thích khám phá và muốn trải nghiệm những
+                giá trị văn hóa - tâm linh độc đáo. Được bao quanh bởi những dãy
+                núi đá vôi hùng vĩ, suối Cá Thần không chỉ nổi tiếng với dòng
+                nước trong xanh mà còn bởi những con cá kỳ bí, màu sắc đa dạng,
+                to lớn bơi lội dưới lòng suối.
+              </p>
+              <p>
+                Một điều đặc biệt là mỗi con cá ở đây đều có trọng lượng từ 2 -
+                8kg và chúng không bao giờ rời khỏi khu vực này. Điều này đã tạo
+                nên một bức tranh sống động, huyền bí giữa lòng thiên nhiên mà
+                bạn sẽ cảm thấy thực sự lý thú khi đến đây.
+              </p>
+              <figure>
+                <img
+                  src="https://mia.vn/media/uploads/blog-du-lich/du-lich-thanh-hoa-08-1695656285.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://mia.vn/cam-nang-du-lich/du-lich-thanh-hoa-12811"
+                    target="_blank"
+                    >mia.vn</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Thác Voi
+              </summary>
+              <p class="detail-content">
+                Nằm giữa những rừng núi hùng vĩ của Thanh Hóa, Thác Voi là một
+                biểu tượng của vẻ đẹp tự nhiên và sự bình yên vốn có của núi
+                rừng. Khi bước chân đến thác Voi Thanh Hóa, du khách sẽ được
+                chứng kiến một bức tranh thiên nhiên sống động, nơi dòng nước
+                chảy qua những tầng đá trầm tích tạo nên một không gian kỳ ảo và
+                đầy mê hoặc.
+              </p>
+              <figure>
+                <img
+                  src="https://mia.vn/media/uploads/blog-du-lich/du-lich-thanh-hoa-09-1695656290.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://mia.vn/cam-nang-du-lich/du-lich-thanh-hoa-12811"
+                    target="_blank"
+                    >mia.vn</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Thác Mây
+              </summary>
+              <p class="detail-content">
+                Nằm giữa lòng vùng đất Thạch Lâm, Thạch Thành, Thác Mây tự hào
+                là một trong những điểm đến đẹp nhất của du lịch Thanh Hóa, thu
+                hút hàng nghìn du khách mỗi năm. Thác Mây sở hữu chiều dài ấn
+                tượng lên tới 100m, chảy qua 9 tầng thác, mỗi tầng lại mang một
+                vẻ đẹp riêng biệt như 9 bậc thang tình yêu. Chính vì vẻ đẹp độc
+                đáo và lãng mạn này mà nó còn được gọi với cái tên thân thương
+                "thác 9 bậc tình yêu".
+              </p>
+              <p>
+                Một điểm cộng lớn cho Thác Mây là việc miễn phí vé vào cửa, giúp
+                du khách có cơ hội tiếp cận và tận hưởng vẻ đẹp thiên nhiên mà
+                không phải lo lắng về chi phí. Điều này càng khiến cho Thác Mây
+                trở thành một điểm đến không thể bỏ qua cho những ai yêu thích
+                khám phá và muốn trải nghiệm những giây phút thư giãn giữa lòng
+                thiên nhiên.
+              </p>
+              <figure>
+                <img
+                  src="https://mia.vn/media/uploads/blog-du-lich/du-lich-thanh-hoa-10-1695656290.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://mia.vn/cam-nang-du-lich/du-lich-thanh-hoa-12811"
+                    target="_blank"
+                    >mia.vn</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Danh Thắng Kim Sơn
+              </summary>
+              <p class="detail-content">
+                Danh thắng Kim Sơn tỏa sáng với vẻ đẹp huyền bí và trữ tình giữa
+                thiên nhiên núi non hùng vĩ của đất Thanh Hóa. Đến với Kim Sơn,
+                bạn sẽ được trải nghiệm một chuyến hành trình thú vị giữa lòng
+                thiên nhiên, nơi mà núi đá cao vút nối liền với dòng nước trong
+                xanh, tạo nên một khung cảnh như trong truyền thuyết.
+              </p>
+              <p>
+                Lướt trên mặt hồ, du khách sẽ được thưởng thức vẻ đẹp của những
+                dãy núi đá kỳ vĩ, cảm nhận sự bình yên và thư thái khi ngồi trên
+                những chiếc thuyền nhỏ.
+              </p>
+              <p>
+                Điểm đáng nhớ nhất khi đến Kim Sơn chính là cửa động Tiên Sơn,
+                nơi tượng Phật Bà Quan Thế m Bồ Tát hiện ra giữa không gian
+                thiên nhiên như một minh chứng cho sự bình an và thiêng liêng.
+              </p>
+              <p>
+                Bên cạnh đó, chùa Linh Ứng với kiến trúc cổ kính mang đậm dấu ấn
+                văn hóa và tâm linh tại Kim Sơn cũng sẽ là nơi để bạn tìm về
+                bình yên và lắng nghe tiếng lòng của mình.
+              </p>
+              <figure>
+                <img
+                  src="https://mia.vn/media/uploads/blog-du-lich/du-lich-thanh-hoa-11-1695656290.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://mia.vn/cam-nang-du-lich/du-lich-thanh-hoa-12811"
+                    target="_blank"
+                    >mia.vn</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Đảo Hòn Mê
+              </summary>
+              <p class="detail-content">
+                Đảo Hòn Mê vẫn giữ nguyên vẻ đẹp hoang sơ và huyền bí mà thiên
+                nhiên đã ban tặng. Được người dân địa phương yêu quý gọi là "đảo
+                Mây" bởi hình ảnh mây mờ bao phủ quanh năm trên đỉnh núi cao
+                nhất của đảo, nơi đây dường như đã trở thành một biểu tượng cho
+                sự thanh bình và tĩnh lặng.
+              </p>
+              <p>
+                Cách đất liền chỉ khoảng 11km, Đảo Hòn Mê có tổng diện tích lên
+                đến 450ha, bao gồm 18 hòn đảo lớn nhỏ. Khi trời trong xanh, từ
+                ngọn núi cao nhất ở dãy Nam Động, du khách có thể nhìn thấy toàn
+                bộ cụm đảo giống như 18 con tuấn mã đang nô đùa giữa biển khơi,
+                tạo thành hình chữ "Vị".
+              </p>
+              <p>
+                Chính vì vậy, cụm đảo này còn có tên gọi là "Thập Bát Mã Sơn".
+                Đặc biệt, Đảo Hòn Mê không chỉ là một điểm du lịch thiên nhiên
+                mà còn là nơi các chiến sĩ canh giữ, bảo vệ biển trời quê hương
+                đất nước.
+              </p>
+              <figure>
+                <img
+                  src="https://mia.vn/media/uploads/blog-du-lich/du-lich-thanh-hoa-12-1695656295.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://mia.vn/cam-nang-du-lich/du-lich-thanh-hoa-12811"
+                    target="_blank"
+                    >mia.vn</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Khu di tích lịch sử - văn hóa Hàm Rồng
+              </summary>
+              <p class="detail-content">
+                Khu di tích lịch sử văn hóa Hàm Rồng là sự kết hợp hài hòa giữa
+                vẻ đẹp thiên nhiên và giá trị lịch sử - văn hóa. Bao gồm nhiều
+                danh lam thắng cảnh và di tích lịch sử quan trọng như cầu Hàm
+                Rồng, núi Hàm Rồng, Động Tiên Sơn, Động Long Quang và núi Ngọc,
+                nơi đây đã trở thành điểm đến không thể bỏ qua cho du khách khi
+                đến với Thanh Hóa.
+              </p>
+              <p>
+                Đặc biệt, khu di tích còn có làng cổ Đông Sơn nơi gắn liền với
+                nền văn hóa Đông Sơn nổi tiếng. Ngoài ra, thiền viện Trúc Lâm
+                Hàm Rồng cũng là một điểm đến không thể bỏ lỡ bởi bạn sẽ được
+                khám phá các giá trị tâm linh cực kỳ linh thiêng.
+              </p>
+              <figure>
+                <img
+                  src="https://mia.vn/media/uploads/blog-du-lich/du-lich-thanh-hoa-13-1695656295.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://mia.vn/cam-nang-du-lich/du-lich-thanh-hoa-12811"
+                    target="_blank"
+                    >mia.vn</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Thành nhà Hồ
+              </summary>
+              <p class="detail-content">
+                Thành nhà Hồ được xem là một biểu tượng lịch sử và văn hóa của,
+                được xây dựng bởi Hồ Quý Ly vào năm 1397.Sau gần 600 năm trải
+                qua bao thăng trầm của lịch sử, những bức tường thành vững chắc
+                với bốn cổng Đông, Tây, Nam, Bắc vẫn giữ nguyên vẻ đẹp kiến trúc
+                ban đầu.
+              </p>
+              <p>
+                Vào năm 2011, UNESCO đã công nhận thành nhà Hồ là di sản văn hóa
+                thế giới nhằm nhấn mạnh giá trị nhân văn và kiến trúc độc đáo
+                của nơi này.
+              </p>
+              <figure>
+                <img
+                  src="https://mia.vn/media/uploads/blog-du-lich/du-lich-thanh-hoa-14-1695656295.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://mia.vn/cam-nang-du-lich/du-lich-thanh-hoa-12811"
+                    target="_blank"
+                    >mia.vn</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Di tích lịch sử Lam Kinh
+              </summary>
+              <p class="detail-content">
+                Thành điện Lam Kinh - một trong những di sản lịch sử quý giá của
+                Thanh Hóa, mang trong mình dấu ấn của một thời kỳ hào hùng trong
+                lịch sử Việt Nam.
+              </p>
+              <p>
+                Đây còn là nơi sinh của anh hùng dân tộc Lê Lợi và là trung tâm
+                của cuộc khởi nghĩa Lam Sơn chống giặc Minh. Sau 10 năm kháng
+                chiến, Lê Lợi đã giành lại độc lập cho đất nước và lên ngôi
+                Hoàng đế mở ra một thời kỳ thịnh trị kéo dài gần 360 năm.
+              </p>
+              <p>
+                Lam Kinh không chỉ là một di tích lịch sử mà còn là nơi tôn vinh
+                và thờ cúng tổ tiên của triều đại nhà Lê. Được coi là "kinh đô
+                thứ hai" sau Thăng Long, Lam Kinh chứa đựng nhiều giá trị văn
+                hóa thiêng liêng cũng như là nơi an nghỉ của các vị vua và hoàng
+                hậu.
+              </p>
+              <p>
+                Về địa thế, khu di tích Lam Kinh được xây dựng theo nguyên tắc
+                "tọa sơn hướng thủy", một tiêu chuẩn phong thủy quan trọng của
+                người Á Đông. Phía Bắc tựa vào núi Dầu, phía Nam hướng ra sông
+                Chu, phía Đông bên cạnh rừng Phú Lâm và phía Tây được bảo vệ bởi
+                núi Hương và Có thể nói, thành điện Lam Kinh không chỉ là một
+                biểu tượng lịch sử của Thanh Hoá mà còn là một di sản văn hóa
+                quý giá của cả dân tộc Việt Nam. Đến với Lam Kinh, du khách sẽ
+                được trải nghiệm và tìm hiểu sâu hơn về lịch sử và văn hóa của
+                đất nước.
+              </p>
+              <figure>
+                <img
+                  src="https://mia.vn/media/uploads/blog-du-lich/du-lich-thanh-hoa-15-1695656295.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://mia.vn/cam-nang-du-lich/du-lich-thanh-hoa-12811"
+                    target="_blank"
+                    >mia.vn</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+        </ol>
+      </section>
+      <hr />
+      <section class="w3-row w3-padding-16 w3-content" id="tiemnang">
+        <header>
+          <h1 class="w3-center" style="font-size: 50px">
+            TIỀM NĂNG PHÁT TRIỂN
+          </h1>
+        </header>
+        <article style="font-size: 20px; line-height: 1.7">
+          <p>
+            <mark
+              ><strong
+                >Tiềm năng phát triển của Thanh Hóa sau sáp nhập xã Nga
+                Sơn</strong
+              ></mark
+            >
+          </p>
+          <p>
+            Sau khi sáp nhập các đơn vị hành chính gồm Nga Yên, Nga Thanh, Nga
+            Hiệp, Nga Thủy và thị trấn Nga Sơn, xã Nga Sơn mới ra đời với quy mô
+            dân số <u>hơn 47.000 người</u>. Đây là một trong những địa phương có
+            quy mô lớn và tốc độ phát triển năng động tại Bắc Thanh Hóa, tạo nền
+            tảng thuận lợi để trở thành trung tâm kinh tế – xã hội trong khu
+            vực. Sự hợp nhất này không chỉ mở rộng không gian phát triển mà còn
+            giúp địa phương thu hút các nguồn vốn đầu tư mạnh mẽ, nâng cao sức
+            hấp dẫn cho doanh nghiệp và nhà đầu tư.
+          </p>
+
+          <p>
+            <mark><strong>Tăng trưởng kinh tế ấn tượng</strong></mark>
+          </p>
+          <p>
+            Kinh tế của Nga Sơn trong những năm gần đây duy trì tốc độ tăng
+            trưởng cao, với tổng vốn đầu tư toàn xã hội đạt
+            <u>hơn 5.005 tỷ đồng</u>, gấp <u>2,1 lần</u> giai đoạn 2016–2020.
+            Nhiều chỉ tiêu kinh tế – xã hội hoàn thành và vượt kế hoạch, cho
+            thấy vùng đất mới hợp nhất có sức phát triển mạnh mẽ và bền vững.
+            Thu ngân sách vượt chỉ tiêu, kết cấu hạ tầng kinh tế – xã hội được
+            đầu tư đồng bộ, hiện đại hóa hệ thống đô thị và nông thôn, cải thiện
+            đáng kể đời sống vật chất và tinh thần của người dân.
+          </p>
+
+          <p>
+            <mark><strong>Phát triển nông nghiệp và công nghiệp</strong></mark>
+          </p>
+          <p>
+            Thanh Hóa xác định phát triển nông nghiệp công nghệ cao, quy mô lớn,
+            tập trung sản phẩm hữu cơ và sạch, gắn với chuỗi cung ứng và thị
+            trường tiêu thụ bền vững. Đồng thời, địa phương triển khai hiệu quả
+            các chính sách thu hút đầu tư tư nhân, mở rộng sản xuất và tạo việc
+            làm. Những động lực tăng trưởng này không chỉ dựa trên truyền thống
+            mà còn hình thành các hướng đi mới để bảo đảm tốc độ phát triển
+            nhanh và bền vững.
+          </p>
+
+          <p>
+            <mark
+              ><strong>Chuyển đổi số và hiện đại hóa hành chính</strong></mark
+            >
+          </p>
+          <p>
+            Thanh Hóa cũng chú trọng chuyển đổi số toàn diện, hiện đại hóa hệ
+            thống hành chính, nâng cao chất lượng dịch vụ công và chăm sóc sức
+            khỏe nhân dân. Công tác quốc phòng – an ninh được củng cố, đảm bảo
+            trật tự xã hội ổn định. Cán bộ được đào tạo bài bản, am hiểu pháp
+            luật và sử dụng thành thạo công nghệ số, góp phần nâng cao năng lực
+            quản lý, điều hành và phục vụ người dân.
+          </p>
+
+          <p>
+            <mark><strong>Mục tiêu 2025–2030</strong></mark>
+          </p>
+          <p>
+            Trong giai đoạn 2025–2030, mục tiêu của Thanh Hóa, đặc biệt là xã
+            Nga Sơn, là xây dựng xã nông thôn mới nâng cao, hướng tới đô thị văn
+            minh và hiện đại. Quy hoạch phát triển được xây dựng đồng bộ, bảo
+            đảm tầm nhìn dài hạn, liên kết vùng và khai thác hiệu quả các tiềm
+            năng kinh tế – xã hội. Công tác xây dựng Đảng, củng cố hệ thống
+            chính trị trong sạch, vững mạnh được tiếp tục thực hiện, tạo nền
+            tảng cho sự phát triển bền vững.
+          </p>
+
+          <p>
+            <mark><strong>Kết luận</strong></mark>
+          </p>
+          <p>
+            Thanh Hóa, với xã Nga Sơn mới hợp nhất, sở hữu nền tảng dân số lớn,
+            hạ tầng hiện đại, kinh tế tăng trưởng cao, nông nghiệp công nghệ
+            cao, chuyển đổi số mạnh mẽ cùng môi trường chính trị – xã hội ổn
+            định. Những yếu tố này giúp tỉnh trở thành trung tâm kinh tế – xã
+            hội quan trọng phía Đông Bắc, đồng thời mở ra tiềm năng phát triển
+            bền vững, hiện đại và đáng sống cho người dân trong tương lai.
+          </p>
+        </article>
+        <p style="font-size: 15px" class="w3-center">
+          (Nguồn thông tin:
+          <a
+            href="https://kinhtechungkhoan.vn/sau-sap-nhap-thanh-hoa-se-bien-vung-dat-moi-tro-thanh-trung-tam-kinh-te-xa-hoi-phia-dong-bac-thu-hut-nhieu-nguon-dau-tu-manh-me-1408000.html"
+            target="_blank"
+            >kinhtechungkhoan.vn</a
+          >)
+        </p>
+      </section>
+      <hr />
+    </main>
+    <footer class="w3-center w3-light-grey w3-padding-32">
+      <p>HẾT!</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        document.getElementById("navMenu").classList.toggle("w3-hide");
+      }
+    </script>
+    <script>
+      const menuScroll = document.querySelector(".menu-scroll");
+      const btnLeft = document.querySelector(".left-btn");
+      const btnRight = document.querySelector(".right-btn");
+      const step = 200;
+      btnRight.addEventListener("click", () => {
+        menuScroll.scrollLeft += step;
+      });
+      btnLeft.addEventListener("click", () => {
+        menuScroll.scrollLeft -= step;
+      });
+    </script>
+  </body>
+</html>
